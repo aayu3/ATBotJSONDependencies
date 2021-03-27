@@ -2,6 +2,7 @@ const fs = require('fs');
 const jsdom = require('jsdom');
 const jquery = require('jquery')
 const { JSDOM } = jsdom;
+const cheerio = require('cheerio');
 
 let rawdata = fs.readFileSync("supporters.json");
 var supporters = JSON.parse(rawdata);
