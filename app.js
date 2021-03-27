@@ -7,20 +7,13 @@ const cheerio = require('cheerio');
 let rawdata = fs.readFileSync("supporters.json");
 var supporters = JSON.parse(rawdata);
 var html = fs.readFileSync("index.html");
-var indexWindow = new JSDOM(html, {
-    // standard options:  disable loading other assets
-    // or executing script tags
-    url: "https://aayu3.github.io/ATBotJSONDependencies/",
-    FetchExternalResources: false,
-    ProcessExternalResources: false,
-    MutationEvents: false,
-    QuerySelector: false
-}).defaultView;
 
-var indexHTML = new jquery(indexWindow);
-indexHTML('body').append('<a href="supporters/0002.html">Homura</a>');
-console.log( window.document.doctype + window.document.innerHTML );
-//fs.writeFile('index.html', indexDom.serialize(), (error) => { console.log("Unable to add 0002.html") });
+const indexHTML = cheerio.load(html);
+console.log(indexHTML.html());
+indexHTML('a[href]').attr("href", "supporters/0002.html");
+//indexHTML('a.href').text('supporters/0002.html');
+console.log(indexHTML.html());
+//fs.writeFile('index.html', indexHTML.html(), (error) => { console.log("Unable to add 0002.html") });
 /*
 for (var i = 0; i < supporters.length; i++) {
     var sup = supporters[i];
