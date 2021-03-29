@@ -793,5 +793,35 @@
       "MainSkillActive":"Sends a black draconic wave ahead to deal 400% (Max 800%) damage and to remove the enemy’s Super Armor (not applied in Arena)",
       "MainSkillPassive":"Basic melee attacks give a 15% chance of gaining Super Armor for 1 second (Max 2 seconds).",
       "CD":40
+   },
+   {
+      "Name":"Misaki Akane",
+      "Number":54,
+      "Type":"Assist",
+      "Rarity":"UR",
+      "Source":"Standard Gacha",
+      "Unawakened":"054_0",
+      "Awakened":"054_1",
+      "SubSkillName":"Sound-Escape: Living Voice Wounding Sound",
+      "SubSkill":"Increases damage to all enemies by 10% (Max 20%); Increases critical damage to bosses by 25% (Max 50%) for 10 seconds when a critical hit occurs on an attack.",
+      "MainSkillName":"Sound-Escape Art: Spirit Word",
+      "MainSkillActive":"Inflicts a knockback attack of 280% (Max 560%) to all enemies in range, and recover 15% (Max 30%) of HP.",
+      "MainSkillPassive":false,
+      "CD":53
+   },
+   {
+      "Name":"Kuramochi Keito",
+      "Number":55,
+      "Type":"Protect",
+      "Rarity":"UR",
+      "Source":"Event: Sounds and Shadows in Shifting Woods",
+      "Unawakened":"055_0",
+      "Awakened":"055_1",
+      "SubSkillName":"Shadow-Escape: Nightvision Eye",
+      "SubSkill":"Increases damage of ranged attacks against snared enemies by 12% (Max 24%). Increases the critical hit rate of ranged attacks against snared enemies by 8% (Max 16%) for 7 seconds if an attack is critical.",
+      "MainSkillName":"Shadow-Escape Art: Demonic Shadow Bow",
+      "MainSkillActive":"Unleases a series of attacks with 256% (Max 512%) damage on all enemires in range.",
+      "MainSkillPassive": "Snares up to 4 random enemies for 3 seconds (Max 6 seconds). Applies every 4.5 seconds with a 50% chance.",
+      "CD":53
    }
 ]
