@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+<style>
+    * {
+        font-family: "Cairo", sans-serif;
+    }
+    p {
+        line-height: 2px;
+    }
+    h2 {
+        line-height: 15px;
+    }
+    h3 {
+        line-height: 10px;
+    }
+</style>
+<html>
+    <head>
+        <title>ATBotJSON Dependencies</title>
+        <a href="../index.html">Home</a>  
+    </head>
+<body>
+    <h1 id = "Name">Supporter Name</h1>
+    <h2>Type:
+        <img id="Type" src="../wiki_icons/protect.png" style="width:30px" title = "Type">
+    </h2>
+    <h2>Rarity:
+        <img id="Rarity" src="../wiki_icons/sr.png" style="width:50px" title = "Rarity">
+    </h2>
+    <h2 title = "Source", id = "Source">Source: </h2>
+    <button title = "UnawakenedButton" id = "UnawakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/001_0.png'">Unawakened</button>
+    <button title = "AwakenedButton" id = "AwakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/001_1.png'">Awakened</button> <br>
+    <img title = "SupporterImage" id="SupporterImage" src="../supporter_images/001_0.png" style="width:500px">
+
+
+    <h2 title = "SubSkill" id = "SubSkill"><u id = "SubSkillName"></u> </h2>
+        <p style="font-size:16px;" title = "SubSkillText" ><i id = "SubSkillText"></i></p>
+   
+
+    <h2 title = "LeadSkill"  id = "LeadSkill"><i id = "LeadSkillName"></i> <text title = "CD" id = "CD"></text>
+        <h3 title = "ActiveSkill" id = "ActiveSkill"></h3>
+        <p style="font-size:16px;" title = "ActiveSkillText"><i id = "ActiveSkillText"></i></p>
+
+        <h3 title = "PassiveSkill" id = "PassiveSkill"></h3>
+        <p style="font-size:16px;" title = "PassiveSkillText"><i id = "PassiveSkillText"></i></p>
+        
+
+    </h2> 
+</body>
+</html>
