@@ -10,12 +10,14 @@ var html = fs.readFileSync("supporters.html");
 
 
 const allSupportersHTML = cheerio.load(html);
+// Used to clear old data
+allSupportersHTML("#supporters").empty();
 allSupportersHTML("#supporters").append("<h1>Supporters: </h1>");
 allSupportersHTML("#supporters").append("<br>");
 for (var i = 0; i < supporters.length; i ++) {
     var numString = (i+1).toString();
     numString = "0".repeat(4-numString.length) + numString; 
-    allSupportersHTML('p').append("<a href=\"supporters_html/" + numString + ".html\">" + supporters[i].Name + "</a><br>\n");
+    allSupportersHTML("#supporters").append("<a href=\"supporters_html/" + numString + ".html\">" + supporters[i].Name + "</a><br>\n");
     let supporterHTML = SupporterJSONtoHTML(supporters[i]).toString();
     fs.writeFile("./supporters_html/" + numString + ".html", supporterHTML, (error) => { console.log("Unable to add " + numString +".html")});
 }
