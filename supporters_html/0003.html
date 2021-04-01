@@ -4,21 +4,63 @@
         font-family: "Cairo", sans-serif;
     }
     p {
-        line-height: 2px;
+        line-height: 20px;
     }
     h2 {
-        line-height: 15px;
+        line-height: 20px;
     }
     h3 {
-        line-height: 10px;
+        line-height: 20px;
     }
+    body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #636161;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+div {
+    background-color: #333333; 
+    color:white 
+}
 </style>
 
     
         <title>ATBotJSON Dependencies</title>
-        </head><body><a href="../index.html">Home</a>  
+        </head><body><ul>
+            <li><a href="../index.html">Home</a></li>
+              <li><a class="active" href="../supporters.html">Supporters</a></li>
+              <li><a href="../supporters.json">JSON</a></li>
+            </ul>
     
 
+
+    
+<div style="margin-left:10%;padding:1px 16px;height:1000px;">
     <h1 id="Name">No. 3: Amamiya Shisui</h1>
     <h2>Type:
         <img id="Type" src="../wiki_icons/protect.png" style="width:30px" title="Type">
@@ -44,6 +86,7 @@
         
 
      
+    </div>
 
 
 </body></html>
