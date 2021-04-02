@@ -820,7 +820,7 @@
       "SubSkillName":"Shadow Art: Dark Beholder",
       "SubSkill":"Increases damage dealt with ranged attacks on snared enemies by 12% (Max 24%); increases critical rate of ranged attacks on snared enemies by 8% (Max 16%) for 7 seconds upon scoring a critical hit.",
       "MainSkillName":"Shadow Art: Fiend's Bow",
-      "MainSkillActive":"Make multiple attacks that deals 265% damage within the area.",
+      "MainSkillActive":"Make multiple attacks that deals 265% (Max 530%) damage within the area.",
       "MainSkillPassive": "Snares up to 4 random enemies for 3 seconds (Max 6 seconds). Applies every 4.5 seconds with a 50% chance.",
       "CD":53
    }
