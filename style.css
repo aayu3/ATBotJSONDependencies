@@ -13,6 +13,8 @@ h3 {
 }
 
 body {
+  display: flex;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -31,7 +33,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 10%;
+  width: 240px;
   background-color: #636161;
   position: fixed;
   height: 100%;
@@ -68,9 +70,9 @@ a:visited {
 }
 
 .main-content {
-  margin-left: 10%;
-  padding: 1px 16px;
-  height: 1000px;
+  width: 100%;
+  margin-left: 240px;
+  padding: 1rem;
 }
 
 #supporterSearch {
@@ -79,10 +81,9 @@ a:visited {
   background-repeat: no-repeat; /* Do not repeat the icon image */
   width: 100%; /* Full-width */
   font-size: 16px; /* Increase font-size */
+  margin-bottom: 0.5rem;
   padding: 12px 20px 12px 40px; /* Add some padding */
   border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-  margin-top: 12px; /* Add some space below the input */
 }
 
 #supporters {
@@ -90,8 +91,10 @@ a:visited {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  width: 88%;
-  height: 85%;
+  width: 100%;
+  height: calc(100vh - 6rem);
+
+  position: static;
 }
 
 #supporters li a {
