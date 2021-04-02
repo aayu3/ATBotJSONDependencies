@@ -1,206 +1,215 @@
-<html><head><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
-  <style>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cairo"
+    />
+    <style>
       * {
-          font-family: "Cairo", sans-serif;
+        font-family: "Cairo", sans-serif;
       }
       body {
-  margin: 0;
-}
+        margin: 0;
+      }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 10%;
-  background-color: #636161;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 10%;
+        background-color: #636161;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
+      li a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
 
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
+      li a.active {
+        background-color: #4caf50;
+        color: white;
+      }
 
-li a:hover:not(.active) {
-  background-color: rgb(49, 49, 49);
-  color: white;
-}
-body {
-    background-color: #333333; 
-    color:white;
-    height: 100%;
-}
-a:link {
-  color: #4CAF50;
-  background-color: transparent;
-  text-decoration: none;
-}
+      li a:hover:not(.active) {
+        background-color: rgb(49, 49, 49);
+        color: white;
+      }
+      body {
+        background-color: #333333;
+        color: white;
+        height: 100%;
+      }
+      a:link {
+        color: #4caf50;
+        background-color: transparent;
+        text-decoration: none;
+      }
 
-a:visited {
-  color: #4CAF50;
-  background-color: transparent;
-  text-decoration: none;
-}
+      a:visited {
+        color: #4caf50;
+        background-color: transparent;
+        text-decoration: none;
+      }
 
-h1 {
-  line-height: 5px;
-}
-div {
-  line-height: 20px;
-  
-}
-#supporterSearch {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-  margin-top: 12px; /* Add some space below the input */
+      h1 {
+        line-height: 5px;
+      }
+      div {
+        line-height: 20px;
+      }
+      #supporterSearch {
+        background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+        margin-top: 12px; /* Add some space below the input */
+      }
 
-  
-}
+      #supporters {
+        /* Remove default list styling */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        width: 88%;
+        height: 85%;
+      }
 
-#supporters {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  width: 88%;
-  height: 85%;
-  
-}
+      #supporters li a {
+        border: 1px solid #ddd; /* Add a border to all links */
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6; /* Grey background color */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove default text underline */
+        font-size: 18px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+      }
 
-#supporters li a {
-  border: 1px solid #ddd; /* Add a border to all links */
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6; /* Grey background color */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove default text underline */
-  font-size: 18px; /* Increase the font-size */
-  color: black; /* Add a black text color */
-  display: block; /* Make it into a block element to fill the whole list */
-}
+      #supporters li a:hover:not(.header) {
+        background-color: #eee; /* Add a hover effect to all links, except for headers */
+      }
+      #supporters::-webkit-scrollbar {
+        display: none;
+      }
 
-#supporters li a:hover:not(.header) {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
-}
-#supporters::-webkit-scrollbar {
-  display: none;
-}
+      /* Hide scrollbar for IE, Edge and Firefox */
+      #supporters {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      body {
+        overflow: hidden;
+      }
+    </style>
 
-/* Hide scrollbar for IE, Edge and Firefox */
-#supporters {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-body { 
-  overflow : hidden;
-}
-</style>
-
-
-
-  <title>ATBotDependencies Wiki Supporters</title>
-  </head><body><ul>
-    <li><a href="index.html">Home</a></li>
+    <title>ATBotDependencies Wiki Supporters</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
       <li><a class="active" href="supporters.html">Supporters</a></li>
       <li><a href="supporters.json">JSON</a></li>
     </ul>
-  
 
+    <script>
+      function searchSupporters() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("supporterSearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("supporters");
+        li = ul.getElementsByTagName("li");
 
-
-<script>
-  function searchSupporters() {
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById('supporterSearch');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("supporters");
-    li = ul.getElementsByTagName('li');
-  
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
       }
-    }
-  }
-  </script>
-<div id="supporterDiv" style="margin-left:10%;padding:1px 16px;height:1000px;">
-  <input type="text" id="supporterSearch" onkeyup="searchSupporters()" placeholder="Search for supporters..">
-<ul id="supporters"><li><a href="supporters_html/0001.html">Nanase Mai</a></li>
-<li><a href="supporters_html/0002.html">Sanada Homura</a></li>
-<li><a href="supporters_html/0003.html">Amamiya Shisui</a></li>
-<li><a href="supporters_html/0004.html">Fuuma Amane</a></li>
-<li><a href="supporters_html/0005.html">Shido Rinka</a></li>
-<li><a href="supporters_html/0006.html">Maezono Momoko</a></li>
-<li><a href="supporters_html/0007.html">Fuuma Saika</a></li>
-<li><a href="supporters_html/0008.html">Tekkain Kaworu</a></li>
-<li><a href="supporters_html/0009.html">Hoshino Mitsuki</a></li>
-<li><a href="supporters_html/0010.html">Faust</a></li>
-<li><a href="supporters_html/0011.html">Shirase Yuzuriha</a></li>
-<li><a href="supporters_html/0012.html">Major</a></li>
-<li><a href="supporters_html/0013.html">Mido Haruka</a></li>
-<li><a href="supporters_html/0014.html">Merci</a></li>
-<li><a href="supporters_html/0015.html">Shinjou Yuuna</a></li>
-<li><a href="supporters_html/0016.html">Mori Shizuka</a></li>
-<li><a href="supporters_html/0017.html">Amadare Natsume</a></li>
-<li><a href="supporters_html/0018.html">Suou Mikoto</a></li>
-<li><a href="supporters_html/0019.html">Todo Sayako</a></li>
-<li><a href="supporters_html/0020.html">Futaba Yui</a></li>
-<li><a href="supporters_html/0021.html">Shiina Sakurako</a></li>
-<li><a href="supporters_html/0022.html">Mizuno Aya</a></li>
-<li><a href="supporters_html/0023.html">Kiryu Kaoruko</a></li>
-<li><a href="supporters_html/0024.html">Natsu Basara</a></li>
-<li><a href="supporters_html/0025.html">Ginryu Mitsue</a></li>
-<li><a href="supporters_html/0026.html">Yuri Hisui</a></li>
-<li><a href="supporters_html/0027.html">Harusaki Arika</a></li>
-<li><a href="supporters_html/0028.html">Onigumo Saburo</a></li>
-<li><a href="supporters_html/0029.html">[Battle] Igawa Asagi</a></li>
-<li><a href="supporters_html/0030.html">Watarase Tsumugi</a></li>
-<li><a href="supporters_html/0031.html">Fuuma Hibiki</a></li>
-<li><a href="supporters_html/0032.html">Hanasaki Yozora</a></li>
-<li><a href="supporters_html/0033.html">Kamiki Suzune</a></li>
-<li><a href="supporters_html/0034.html">Catejina</a></li>
-<li><a href="supporters_html/0035.html">[Umbra] Igawa Sakura</a></li>
-<li><a href="supporters_html/0036.html">Hiiragi Fuyumi</a></li>
-<li><a href="supporters_html/0037.html">Tsushima Ibuki</a></li>
-<li><a href="supporters_html/0038.html">Shinohara Mari</a></li>
-<li><a href="supporters_html/0039.html">[Surge] Mizuki Yukikaze</a></li>
-<li><a href="supporters_html/0040.html">Kuonji R. Spica</a></li>
-<li><a href="supporters_html/0041.html">Shinonome Nanami</a></li>
-<li><a href="supporters_html/0042.html">[Assault] Yatsu Murasaki</a></li>
-<li><a href="supporters_html/0043.html">Kasahara Tatsumi</a></li>
-<li><a href="supporters_html/0044.html">Mikagami Haru</a></li>
-<li><a href="supporters_html/0045.html">[Master] Akiyama Rinko</a></li>
-<li><a href="supporters_html/0046.html">Fujibayashi Yuno</a></li>
-<li><a href="supporters_html/0047.html">Kamimura Maika</a></li>
-<li><a href="supporters_html/0048.html">Koukawa Asuka</a></li>
-<li><a href="supporters_html/0049.html">Anemone</a></li>
-<li><a href="supporters_html/0050.html">Laetitia Bellmer</a></li>
-<li><a href="supporters_html/0051.html">Tekkain Koharu</a></li>
-<li><a href="supporters_html/0052.html">Felicia</a></li>
-<li><a href="supporters_html/0053.html">[Draconic] Su Jinglei</a></li>
-<li><a href="supporters_html/0054.html">Misaki Akane</a></li>
-<li><a href="supporters_html/0055.html">Kuramochi Keito</a></li>
-</ul>
-</div>
-
-</body></html>
+    </script>
+    <div
+      id="supporterDiv"
+      style="margin-left: 10%; padding: 1px 16px; height: 1000px"
+    >
+      <input
+        type="text"
+        id="supporterSearch"
+        onkeyup="searchSupporters()"
+        placeholder="Search for supporters.."
+      />
+      <ul id="supporters">
+        <li><a href="supporters_html/0001.html">Nanase Mai</a></li>
+        <li><a href="supporters_html/0002.html">Sanada Homura</a></li>
+        <li><a href="supporters_html/0003.html">Amamiya Shisui</a></li>
+        <li><a href="supporters_html/0004.html">Fuuma Amane</a></li>
+        <li><a href="supporters_html/0005.html">Shido Rinka</a></li>
+        <li><a href="supporters_html/0006.html">Maezono Momoko</a></li>
+        <li><a href="supporters_html/0007.html">Fuuma Saika</a></li>
+        <li><a href="supporters_html/0008.html">Tekkain Kaworu</a></li>
+        <li><a href="supporters_html/0009.html">Hoshino Mitsuki</a></li>
+        <li><a href="supporters_html/0010.html">Faust</a></li>
+        <li><a href="supporters_html/0011.html">Shirase Yuzuriha</a></li>
+        <li><a href="supporters_html/0012.html">Major</a></li>
+        <li><a href="supporters_html/0013.html">Mido Haruka</a></li>
+        <li><a href="supporters_html/0014.html">Merci</a></li>
+        <li><a href="supporters_html/0015.html">Shinjou Yuuna</a></li>
+        <li><a href="supporters_html/0016.html">Mori Shizuka</a></li>
+        <li><a href="supporters_html/0017.html">Amadare Natsume</a></li>
+        <li><a href="supporters_html/0018.html">Suou Mikoto</a></li>
+        <li><a href="supporters_html/0019.html">Todo Sayako</a></li>
+        <li><a href="supporters_html/0020.html">Futaba Yui</a></li>
+        <li><a href="supporters_html/0021.html">Shiina Sakurako</a></li>
+        <li><a href="supporters_html/0022.html">Mizuno Aya</a></li>
+        <li><a href="supporters_html/0023.html">Kiryu Kaoruko</a></li>
+        <li><a href="supporters_html/0024.html">Natsu Basara</a></li>
+        <li><a href="supporters_html/0025.html">Ginryu Mitsue</a></li>
+        <li><a href="supporters_html/0026.html">Yuri Hisui</a></li>
+        <li><a href="supporters_html/0027.html">Harusaki Arika</a></li>
+        <li><a href="supporters_html/0028.html">Onigumo Saburo</a></li>
+        <li><a href="supporters_html/0029.html">[Battle] Igawa Asagi</a></li>
+        <li><a href="supporters_html/0030.html">Watarase Tsumugi</a></li>
+        <li><a href="supporters_html/0031.html">Fuuma Hibiki</a></li>
+        <li><a href="supporters_html/0032.html">Hanasaki Yozora</a></li>
+        <li><a href="supporters_html/0033.html">Kamiki Suzune</a></li>
+        <li><a href="supporters_html/0034.html">Catejina</a></li>
+        <li><a href="supporters_html/0035.html">[Umbra] Igawa Sakura</a></li>
+        <li><a href="supporters_html/0036.html">Hiiragi Fuyumi</a></li>
+        <li><a href="supporters_html/0037.html">Tsushima Ibuki</a></li>
+        <li><a href="supporters_html/0038.html">Shinohara Mari</a></li>
+        <li><a href="supporters_html/0039.html">[Surge] Mizuki Yukikaze</a></li>
+        <li><a href="supporters_html/0040.html">Kuonji R. Spica</a></li>
+        <li><a href="supporters_html/0041.html">Shinonome Nanami</a></li>
+        <li>
+          <a href="supporters_html/0042.html">[Assault] Yatsu Murasaki</a>
+        </li>
+        <li><a href="supporters_html/0043.html">Kasahara Tatsumi</a></li>
+        <li><a href="supporters_html/0044.html">Mikagami Haru</a></li>
+        <li><a href="supporters_html/0045.html">[Master] Akiyama Rinko</a></li>
+        <li><a href="supporters_html/0046.html">Fujibayashi Yuno</a></li>
+        <li><a href="supporters_html/0047.html">Kamimura Maika</a></li>
+        <li><a href="supporters_html/0048.html">Koukawa Asuka</a></li>
+        <li><a href="supporters_html/0049.html">Anemone</a></li>
+        <li><a href="supporters_html/0050.html">Laetitia Bellmer</a></li>
+        <li><a href="supporters_html/0051.html">Tekkain Koharu</a></li>
+        <li><a href="supporters_html/0052.html">Felicia</a></li>
+        <li><a href="supporters_html/0053.html">[Draconic] Su Jinglei</a></li>
+        <li><a href="supporters_html/0054.html">Misaki Akane</a></li>
+        <li><a href="supporters_html/0055.html">Kuramochi Keito</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
