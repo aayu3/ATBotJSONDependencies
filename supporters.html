@@ -1,118 +1,17 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATBotDependencies Wiki Supporters</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cairo"
     />
-    <style>
-      * {
-        font-family: "Cairo", sans-serif;
-      }
-      body {
-        margin: 0;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 10%;
-        background-color: #636161;
-        position: fixed;
-        height: 100%;
-        overflow: auto;
-      }
-
-      li a {
-        display: block;
-        color: #000;
-        padding: 8px 16px;
-        text-decoration: none;
-      }
-
-      li a.active {
-        background-color: #4caf50;
-        color: white;
-      }
-
-      li a:hover:not(.active) {
-        background-color: rgb(49, 49, 49);
-        color: white;
-      }
-      body {
-        background-color: #333333;
-        color: white;
-        height: 100%;
-      }
-      a:link {
-        color: #4caf50;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      a:visited {
-        color: #4caf50;
-        background-color: transparent;
-        text-decoration: none;
-      }
-
-      h1 {
-        line-height: 5px;
-      }
-      div {
-        line-height: 20px;
-      }
-      #supporterSearch {
-        background-image: url("/css/searchicon.png"); /* Add a search icon to input */
-        background-position: 10px 12px; /* Position the search icon */
-        background-repeat: no-repeat; /* Do not repeat the icon image */
-        width: 100%; /* Full-width */
-        font-size: 16px; /* Increase font-size */
-        padding: 12px 20px 12px 40px; /* Add some padding */
-        border: 1px solid #ddd; /* Add a grey border */
-        margin-bottom: 12px; /* Add some space below the input */
-        margin-top: 12px; /* Add some space below the input */
-      }
-
-      #supporters {
-        /* Remove default list styling */
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        width: 88%;
-        height: 85%;
-      }
-
-      #supporters li a {
-        border: 1px solid #ddd; /* Add a border to all links */
-        margin-top: -1px; /* Prevent double borders */
-        background-color: #f6f6f6; /* Grey background color */
-        padding: 12px; /* Add some padding */
-        text-decoration: none; /* Remove default text underline */
-        font-size: 18px; /* Increase the font-size */
-        color: black; /* Add a black text color */
-        display: block; /* Make it into a block element to fill the whole list */
-      }
-
-      #supporters li a:hover:not(.header) {
-        background-color: #eee; /* Add a hover effect to all links, except for headers */
-      }
-      #supporters::-webkit-scrollbar {
-        display: none;
-      }
-
-      /* Hide scrollbar for IE, Edge and Firefox */
-      #supporters {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-      }
-      body {
-        overflow: hidden;
-      }
-    </style>
-
-    <title>ATBotDependencies Wiki Supporters</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -141,10 +40,7 @@
         }
       }
     </script>
-    <div
-      id="supporterDiv"
-      style="margin-left: 10%; padding: 1px 16px; height: 1000px"
-    >
+    <div id="supporterDiv" class="main-content">
       <input
         type="text"
         id="supporterSearch"

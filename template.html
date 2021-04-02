@@ -1,66 +1,27 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo" />
-<style>
-  * {
-    font-family: "Cairo", sans-serif;
-  }
-  p {
-    line-height: 20px;
-  }
-  h2 {
-    line-height: 20px;
-  }
-  h3 {
-    line-height: 20px;
-  }
-  body {
-    margin: 0;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color: #636161;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-
-  li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-
-  li a.active {
-    background-color: #4caf50;
-    color: white;
-  }
-
-  li a:hover:not(.active) {
-    background-color: rgb(49, 49, 49);
-    color: white;
-  }
-  div {
-    background-color: #333333;
-    color: white;
-  }
-</style>
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATBotJSON Dependencies</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Cairo"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
     <ul>
       <li><a href="../index.html">Home</a></li>
       <li><a class="active" href="../supporters.html">Supporters</a></li>
       <li><a href="../supporters.json">JSON</a></li>
     </ul>
-  </head>
 
-  <body>
-    <div style="margin-left: 10%; padding: 1px 16px; height: 1000px">
+    <div class="main-content">
       <h1 id="Name">Supporter Name</h1>
+
       <h2>
         Type:
         <img
@@ -70,6 +31,7 @@
           title="Type"
         />
       </h2>
+
       <h2>
         Rarity:
         <img
@@ -79,7 +41,9 @@
           title="Rarity"
         />
       </h2>
+
       <h2 title="Source" , id="Source">Source:</h2>
+
       <button
         title="UnawakenedButton"
         id="UnawakenedButton"
@@ -87,6 +51,7 @@
       >
         Unawakened
       </button>
+
       <button
         title="AwakenedButton"
         id="AwakenedButton"
@@ -94,7 +59,9 @@
       >
         Awakened
       </button>
+
       <br />
+
       <img
         title="SupporterImage"
         id="SupporterImage"
@@ -103,6 +70,7 @@
       />
 
       <h2 title="SubSkill" id="SubSkill"><u id="SubSkillName"></u></h2>
+
       <p style="font-size: 16px" title="SubSkillText">
         <i id="SubSkillText"></i>
       </p>
@@ -113,7 +81,6 @@
         <p style="font-size: 16px" title="ActiveSkillText">
           <i id="ActiveSkillText"></i>
         </p>
-
         <h3 title="PassiveSkill" id="PassiveSkill"></h3>
         <p style="font-size: 16px" title="PassiveSkillText">
           <i id="PassiveSkillText"></i>
