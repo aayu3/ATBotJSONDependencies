@@ -39,7 +39,9 @@
         <div class="row">
           <div class="col-12">
             <ul id="supporters">
-              <li><a href="supporters_html/0001.html">Nanase Mai</a></li>
+              <div id="supporter-list"></div>
+
+              <!-- <li><a href="supporters_html/0001.html">Nanase Mai</a></li>
               <li><a href="supporters_html/0002.html">Sanada Homura</a></li>
               <li><a href="supporters_html/0003.html">Amamiya Shisui</a></li>
               <li><a href="supporters_html/0004.html">Fuuma Amane</a></li>
@@ -105,7 +107,7 @@
                 <a href="supporters_html/0053.html">[Draconic] Su Jinglei</a>
               </li>
               <li><a href="supporters_html/0054.html">Misaki Akane</a></li>
-              <li><a href="supporters_html/0055.html">Kuramochi Keito</a></li>
+              <li><a href="supporters_html/0055.html">Kuramochi Keito</a></li> -->
             </ul>
           </div>
         </div>
@@ -132,6 +134,35 @@
           }
         }
       }
+
+      async function getSupporters() {
+        const response = await fetch("./supporters.json");
+
+        if (response.ok) {
+          const supporters = await response.json();
+          // console.log("supporters: ", supporters);
+
+          let supporterList = "";
+
+          supporters.forEach((sup, i) => {
+            const orderNumber = (i + 1).toString();
+            const lengthToAddZero = 4 - orderNumber.length;
+            const zero = "0";
+            const supNumber = zero.repeat(lengthToAddZero) + orderNumber;
+
+            supporterList += `
+              <li><a href="supporters_html/${supNumber}.html">${sup.Name}</a></li>
+            `;
+          });
+
+          resultElement = document.getElementById("supporter-list");
+
+          resultElement.innerHTML = supporterList;
+        } else {
+          console.error("HTTP-Error: " + response.status);
+        }
+      }
+      getSupporters();
     </script>
   </body>
 </html>
