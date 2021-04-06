@@ -45,6 +45,7 @@ function SupporterJSONtoHTML(supporter) {
         templateHTML("#Rarity").attr("src","../wiki_icons/ur.png");
     }
     templateHTML("#Source").append(supporter.Source);
+    templateHTML("#Status").append(supporter.Status);
     // Set Unawakened, Awakened, and starting Video
     templateHTML("#UnawakenedButton").attr("onclick","document.getElementById('SupporterImage').src='../supporter_images/" + supporter.Unawakened + ".png'");
     templateHTML("#AwakenedButton").attr("onclick","document.getElementById('SupporterImage').src='../supporter_images/" + supporter.Awakened + ".png'");
