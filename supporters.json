@@ -823,5 +823,20 @@
       "MainSkillActive":"Make multiple attacks that deals 265% (Max 530%) damage within the area.",
       "MainSkillPassive": "Snares up to 4 random enemies for 3 seconds (Max 6 seconds). Applies every 4.5 seconds with a 50% chance.",
       "CD":53
+   },
+   {
+      "Name":"Onisaki Kirara",
+      "Number":56,
+      "Type":"Assist",
+      "Rarity":"UR",
+      "Source":"Limited Gacha",
+      "Unawakened":"056_0",
+      "Awakened":"056_1",
+      "SubSkillName":"Frigid Zone",
+      "SubSkill":"Reduces damage taken from all enemies by 15% (Max 30%); increases HP restored from all sources by 10% (Max 20%).",
+      "MainSkillName":"Super Freeze",
+      "MainSkillActive":"Ice storm deals 500% (Max 1000%) damage and freezes all enemies in the line for 5 seconds.",
+      "MainSkillPassive": "20% chance of dealing 55% (Max 110%) damage and freezing all enemies nearby for 2 seconds upon being attacked.",
+      "CD":63
    }
 ]
