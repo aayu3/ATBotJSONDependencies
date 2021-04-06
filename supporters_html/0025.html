@@ -1,93 +1,70 @@
-<html><head><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
-<style>
-    * {
-        font-family: "Cairo", sans-serif;
-    }
-    p {
-        line-height: 20px;
-    }
-    h2 {
-        line-height: 20px;
-    }
-    h3 {
-        line-height: 20px;
-    }
-    body {
-  margin: 0;
-}
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATBotJSON Dependencies</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 10%;
-  background-color: #636161;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-}
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
 
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: rgb(49, 49, 49);
-  color: white;
-}
-div {
-    background-color: #333333; 
-    color:white 
-}
-</style>
-
-    
-        <title>ATBotJSON Dependencies</title>
-        </head><body><ul>
-            <li><a href="../index.html">Home</a></li>
-              <li><a class="active" href="../supporters.html">Supporters</a></li>
-              <li><a href="../supporters.json">JSON</a></li>
-            </ul>
-    
+  <body>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a class="active" href="../supporters.html">Supporters</a></li>
+      <li><a href="../supporters.json">JSON</a></li>
+    </ul>
 
 
-    
-<div style="margin-left:10%;padding:1px 16px;height:1000px;">
-    <h1 id="Name">No. 25: Ginryu Mitsue</h1>
-    <h2>Type:
-        <img id="Type" src="../wiki_icons/protect.png" style="width:30px" title="Type">
-    </h2>
-    <h2>Rarity:
-        <img id="Rarity" src="../wiki_icons/rare.png" style="width:50px" title="Rarity">
-    </h2>
-    <h2 title="Source" ,="" id="Source">Source: Standard Gacha</h2>
-    <button title="UnawakenedButton" id="UnawakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/025_0.png'">Unawakened</button>
-    <button title="AwakenedButton" id="AwakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/025_1.png'">Awakened</button> <br>
-    <img title="SupporterImage" id="SupporterImage" src="../supporter_images/025_0.png" style="width:500px">
+    <div class="main-content">
+      <h1 id="Name">No. 25: Ginryu Mitsue</h1>
+
+      <h2>
+        Type:
+        <img id="Type" src="../wiki_icons/protect.png" style="width: 30px" title="Type">
+      </h2>
+
+      <h2>
+        Rarity:
+        <img id="Rarity" src="../wiki_icons/rare.png" style="width: 50px" title="Rarity">
+      </h2>
+
+      <h2 title="Source" ,="" id="Source">Source:Standard Gacha</h2>
+
+      <button title="UnawakenedButton" id="UnawakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/025_0.png'">
+        Unawakened
+      </button>
 
 
-    <h2 title="SubSkill" id="SubSkill">Sub Skill: <u id="SubSkillName">Ironclad Soul</u></h2>
-        <p style="font-size:16px;" title="SubSkillText"><i id="SubSkillText">Restores 4% (Max 8%) of lost HP every 6 seconds. Ends when HP drops below half the maximum.</i></p>
-   
+      <button title="AwakenedButton" id="AwakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/025_1.png'">
+        Awakened
+      </button>
 
-    <h2 title="LeadSkill" id="LeadSkill"><i id="LeadSkillName"></i> <text title="CD" id="CD"></text>
+      <br>
+
+      <img title="SupporterImage" id="SupporterImage" src="../supporter_images/025_0.png" style="width: 500px">
+
+      <h2 title="SubSkill" id="SubSkill">Sub Skill: <u id="SubSkillName">Ironclad Soul</u></h2>
+
+      <p style="font-size: 16px" title="SubSkillText">
+        <i id="SubSkillText">Restores 4% (Max 8%) of lost HP every 6 seconds. Ends when HP drops below half the maximum.</i>
+      </p>
+
+      <h2 title="LeadSkill" id="LeadSkill">
+        <i id="LeadSkillName"></i> <text title="CD" id="CD"></text>
         </h2><h3 title="ActiveSkill" id="ActiveSkill"></h3>
-        <p style="font-size:16px;" title="ActiveSkillText"><i id="ActiveSkillText"></i></p>
-
+        <p style="font-size: 16px" title="ActiveSkillText">
+          <i id="ActiveSkillText"></i>
+        </p>
         <h3 title="PassiveSkill" id="PassiveSkill"></h3>
-        <p style="font-size:16px;" title="PassiveSkillText"><i id="PassiveSkillText"></i></p>
-        
-
-     
+        <p style="font-size: 16px" title="PassiveSkillText">
+          <i id="PassiveSkillText"></i>
+        </p>
+      
     </div>
-
+  
 
 </body></html>
