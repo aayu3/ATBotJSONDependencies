@@ -23,7 +23,7 @@ fs.writeFile('supporters.html', allSupportersHTML.html(), (error) => { console.l
 
 
 function SupporterJSONtoHTML(supporter) {
-    var template = fs.readFileSync("template.html");
+    var template = fs.readFileSync("./supporters_html/template.html");
     var templateHTML = cheerio.load(template);
     templateHTML("#Name").text("No. " + supporter.Number + ": " + supporter.Name);
 
