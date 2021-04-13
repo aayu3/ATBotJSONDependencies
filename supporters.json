@@ -12,7 +12,8 @@
       "MainSkillName":"Paper Spirit",
       "MainSkillActive":"Reduces all damage taken by 25% (Max 50%) for 16 seconds.",
       "MainSkillPassive":false,
-      "CD":45
+      "CD":45,
+      "Status":"Released"
    },
    {
       "Name":"Sanada Homura",
@@ -27,7 +28,8 @@
       "MainSkillName":"Blaze Spear",
       "MainSkillActive":"Hurls a ring of fire that bounces between enemies, dealing 350% (Max 700%) damage and knocking back targets.",
       "MainSkillPassive":false,
-      "CD":45
+      "CD":45,
+      "Status":"Released"
    },
    {
       "Name":"Amamiya Shisui",
@@ -42,7 +44,8 @@
       "MainSkillName":"Power Engage",
       "MainSkillActive":"Removes 1 (Max 3) debuffs, stuns, and groggy; becomes invulnerable for 8 (Max 16) seconds.",
       "MainSkillPassive":false,
-      "CD":51
+      "CD":51,
+      "Status":"Released"
    },
    {
       "Name":"Fuuma Amane",
@@ -57,7 +60,8 @@
       "MainSkillName":"Evil Eye: Circle Motion",
       "MainSkillActive":false,
       "MainSkillPassive":"Upon being attacked, performs an area attack that deals 55% (Max 110%) of the incoming damage. Every 3rd area attack deals additional damage and knocks back enemies.",
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Shido Rinka",
@@ -72,7 +76,8 @@
       "MainSkillName":"Scattering Mist",
       "MainSkillActive":"Deals 325% (Max 650%) damage and knocks back all enemies.",
       "MainSkillPassive":false,
-      "CD":36
+      "CD":36,
+      "Status":"Released"
    },
    {
       "Name":"Maezono Momoko",
@@ -87,7 +92,8 @@
       "MainSkillName":"Subconscious Manipulation",
       "MainSkillActive":"Deals 275% (Max 550%) damage and stuns all enemies.",
       "MainSkillPassive":false,
-      "CD":33
+      "CD":33,
+      "Status":"Released"
    },
    {
       "Name":"Fuuma Saika",
@@ -102,7 +108,8 @@
       "MainSkillName":"Take Over",
       "MainSkillActive":"Snares all enemies for 5 (Max 10) seconds.",
       "MainSkillPassive":false,
-      "CD":33
+      "CD":33,
+      "Status":"Released"
    },
    {
       "Name":"Tekkain Kaworu",
@@ -117,7 +124,8 @@
       "MainSkillName":"Evil Chain",
       "MainSkillActive":"Deals 425% (Max 850%) damage and stuns all enemies. Deals additional damage to enemies if stunned for 3 seconds.",
       "MainSkillPassive":false,
-      "CD":42
+      "CD":42,
+      "Status":"Released"
    },
    {
       "Name":"Hoshino Mitsuki",
@@ -132,7 +140,8 @@
       "MainSkillName":"Turbulent Dance",
       "MainSkillActive":"Deals 300% (Max 600%) damage and knocks up all enemies.",
       "MainSkillPassive":false,
-      "CD":36
+      "CD":36,
+      "Status":"Released"
    },
    {
       "Name":"Faust",
@@ -147,7 +156,8 @@
       "MainSkillName":"Search Eye",
       "MainSkillActive":"Reduces defense of all Machine-type enemies by 50% (Max 100%) for 12 seconds.",
       "MainSkillPassive":false,
-      "CD":42
+      "CD":42,
+      "Status":"Released"
    },
    {
       "Name":"Shirase Yuzuriha",
@@ -162,7 +172,8 @@
       "MainSkillName":"Marionette Ward",
       "MainSkillActive":false,
       "MainSkillPassive":"Snares up to 4 random enemies for 3 seconds (Max 6 seconds). Applies every 4.5 seconds with a 50% chance.",
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Major",
@@ -177,7 +188,8 @@
       "MainSkillName":"Swing Out",
       "MainSkillActive":"Performs a consecutive attack of 1000% (Max 2000%) damage to 1 enemy; deals additional damage to Machine-type enemies.",
       "MainSkillPassive":false,
-      "CD":45
+      "CD":45,
+      "Status":"Released"
    },
    {
       "Name":"Mido Haruka",
@@ -192,7 +204,8 @@
       "MainSkillName":"Darks Feel",
       "MainSkillActive":false,
       "MainSkillPassive":"Increases all damage dealt against Human-type enemies by 30% (Max 60%)",
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Merci",
@@ -207,7 +220,8 @@
       "MainSkillName":"Payday Cat",
       "MainSkillActive":false,
       "MainSkillPassive":"Increase Gold gained by 14% (Max 28%) when completing quests.",
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Shinjou Yuuna",
@@ -222,7 +236,8 @@
       "MainSkillName":"Swift Tranquility",
       "MainSkillActive":"Immediately restores 12% (Max 24%) of your lost HP.",
       "MainSkillPassive":false,
-      "CD":48
+      "CD":48,
+      "Status":"Released"
    },
    {
       "Name":"Mori Shizuka",
@@ -237,7 +252,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Amadare Natsume",
@@ -252,7 +268,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Suou Mikoto",
@@ -267,7 +284,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Todo Sayako",
@@ -282,7 +300,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Futaba Yui",
@@ -297,7 +316,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Shiina Sakurako",
@@ -312,7 +332,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Mizuno Aya",
@@ -327,7 +348,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Kiryu Kaoruko",
@@ -342,7 +364,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Natsu Basara",
@@ -357,7 +380,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Ginryu Mitsue",
@@ -372,7 +396,8 @@
       "MainSkillName":false,
       "MainSkillActive":false,
       "MainSkillPassive":false,
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Yuri Hisui",
@@ -387,7 +412,8 @@
       "MainSkillName":"Main Skill: Eclipse Meld: Roar",
       "MainSkillActive":"Remove all combos; increases damage dealt and critical damage by 1% (Max 2%) for 10 seconds",
       "MainSkillPassive":false,
-      "CD":48
+      "CD":48,
+      "Status":"Released"
    },
    {
       "Name":"Harusaki Arika",
@@ -402,7 +428,8 @@
       "MainSkillName":"Gravitational Pull",
       "MainSkillActive":"Performs a consecutive attack of 30% (Max 60%) damage to all enemies pulled by the sphere. The sphere explodes after 3 seconds for additional damage.",
       "MainSkillPassive":false,
-      "CD":36
+      "CD":36,
+      "Status":"Released"
    },
    {
       "Name":"Onigumo Saburo",
@@ -417,7 +444,8 @@
       "MainSkillName":"Web Guard",
       "MainSkillActive":"Deals 310% (Max 620%) damage to all enemies within close range, and snares them for 6 seconds (Max 12s)",
       "MainSkillPassive":false,
-      "CD":45
+      "CD":45,
+      "Status":"Released"
    },
    {
       "Name":"[Battle] Igawa Asagi",
@@ -432,7 +460,8 @@
       "MainSkillName":"Koujin Zanka",
       "MainSkillActive":"Briefly moves at the speed of light. Reduces defense of all enemies by 18% (Max 36%) and slows them for 8 seconds.",
       "MainSkillPassive":false,
-      "CD":60
+      "CD":60,
+      "Status":"Released"
    },
    {
       "Name":"Watarase Tsumugi",
@@ -447,7 +476,8 @@
       "MainSkillName":"Weight Art: Hyperweight Zone",
       "MainSkillActive":"Creates a hypergravity field that slows down all enemies by 25% (Max 50%); reverses gravity after 6 seconds, dealing 110% (Max 220%) damage and knocks up the enemies.",
       "MainSkillPassive":false,
-      "CD":57
+      "CD":57,
+      "Status":"Released"
    },
    {
       "Name":"Fuuma Hibiki",
@@ -462,7 +492,8 @@
       "MainSkillName":"Smoke Art: Mirage",
       "MainSkillActive":"Deals 350% (Max 700%) damage to all enemies, and reduces their attack by 15% (Max 30%) for 12 seconds.",
       "MainSkillPassive":false,
-      "CD":48
+      "CD":48,
+      "Status":"Released"
    },
    {
       "Name":"Hanasaki Yozora",
@@ -477,7 +508,8 @@
       "MainSkillName":"Nether Blossom",
       "MainSkillActive":"Deals 330% (max 660%) damage and stuns all enemies within close range; immediately restores 14% (max 28%) of your lost HP",
       "MainSkillPassive":false,
-      "CD":51
+      "CD":51,
+      "Status":"Released"
    },
    {
       "Name":"Kamiki Suzune",
@@ -492,7 +524,8 @@
       "MainSkillName":"Wood Art: Rewind",
       "MainSkillActive":"Reduced the duration of all debuffs by 30% (Max 60%) for 15 seconds; restores 3% (Max 6%) of lost HP every 3 seconds",
       "MainSkillPassive":false,
-      "CD":54
+      "CD":54,
+      "Status":"Released"
    },
    {
       "Name":"Catejina",
@@ -507,7 +540,8 @@
       "MainSkillName":"Curse Whip",
       "MainSkillActive":"Deals 375% (Max 750%) damage to 1 enemy, and increases duration of all debuffs against it for 15 seconds by 25% (max 50%).",
       "MainSkillPassive":false,
-      "CD":45
+      "CD":45,
+      "Status":"Released"
    },
    {
       "Name":"[Umbra] Igawa Sakura",
@@ -522,7 +556,8 @@
       "MainSkillName":"Shadow Art: Dual Dervish ",
       "MainSkillActive":"Conjures shadow thorns that snare all enemies for 5 (Max 8) seconds; gains more Particles from normal attacks for the duration.",
       "MainSkillPassive":false,
-      "CD":60
+      "CD":60,
+      "Status":"Released"
    },
    {
       "Name":"Hiiragi Fuyumi",
@@ -537,7 +572,8 @@
       "MainSkillName":"Surprise Dust",
       "MainSkillActive":"Deals 575% (Max 1150%) damage and knocks up all enemies with close range. The explosion has a short delay.",
       "MainSkillPassive":false,
-      "CD":45
+      "CD":45,
+      "Status":"Released"
    },
    {
       "Name":"Tsushima Ibuki",
@@ -552,7 +588,8 @@
       "MainSkillName":"Wind Art: Vacuum Rend",
       "MainSkillActive":"Deals 375% (Max 750%) damage and knocks down 1 enemy",
       "MainSkillPassive":false,
-      "CD":42
+      "CD":42,
+      "Status":"Released"
    },
    {
       "Name":"Shinohara Mari",
@@ -567,7 +604,8 @@
       "MainSkillName":"Earthen Protection",
       "MainSkillActive":"Deals 284% (Max 568%) damage and knocks up up to 3 random enemies; gains Super Armor for 16 seconds",
       "MainSkillPassive":false,
-      "CD":45
+      "CD":45,
+      "Status":"Released"
    },
    {
       "Name":"[Surge] Mizuki Yukikaze",
@@ -582,7 +620,8 @@
       "MainSkillName":"Lightning Mirror",
       "MainSkillActive":false,
       "MainSkillPassive":"Passive: Counterattacks the incoming attack and deals 85% (Max 170%) of the incoming damage. Every 4th counterattack deals additional damage and Stuns the enemy.",
-      "CD":false
+      "CD":false,
+      "Status":"Released"
    },
    {
       "Name":"Kuonji R. Spica",
@@ -597,7 +636,8 @@
       "MainSkillName":"Water Art: Bubbles",
       "MainSkillActive":"Fires a bubble bullet that bounces between all enemies, dealing 350% (Max 700%) damage and becomes invulnerable for 7 (Max 14) seconds.",
       "MainSkillPassive":false,
-      "CD":49
+      "CD":49,
+      "Status":"Released"
    },
    {
       "Name":"Shinonome Nanami",
@@ -612,7 +652,8 @@
       "MainSkillName":"Ninja Art: Healing Hands",
       "MainSkillActive":"Removes 1 (Max 3) debuff, immediately restores 14% (Max 28%) of your lost HP.",
       "MainSkillPassive":false,
-      "CD":61
+      "CD":61,
+      "Status":"Released"
    },
    {
       "Name":"[Assault] Yatsu Murasaki",
@@ -627,7 +668,8 @@
       "MainSkillName":"Berserker Attack",
       "MainSkillActive":"Creates a magnetic field that pulls enemies in and deals 32% (Max 64%) damage over time, bombards the area after 3 seconds to perform an additional area attack. Increases Particle gains from normal attacks for 4 (Max 8) seconds.",
       "MainSkillPassive":false,
-      "CD":60
+      "CD":60,
+      "Status":"Released"
    },
    {
       "Name":"Kasahara Tatsumi",
@@ -642,7 +684,8 @@
       "MainSkillName":"Ameno-Ma-Hitotsu",
       "MainSkillActive":"Deals 315% (Max 630%) damage to all enemies in the area, and disarms them for 4 (Max 8) seconds.",
       "MainSkillPassive":false,
-      "CD":53
+      "CD":53,
+      "Status":"Released"
    },
    {
       "Name":"Mikagami Haru",
@@ -657,7 +700,8 @@
       "MainSkillName":"Frigid Storm",
       "MainSkillActive":"Reduces damage taken from all enemies by 12% (Max 24%), and increases damage dealt to all enemies by 12% (Max 24%) for 16 seconds.",
       "MainSkillPassive":false,
-      "CD":48
+      "CD":48,
+      "Status":"Released"
    },
    {
       "Name":"[Master] Akiyama Rinko",
@@ -672,7 +716,8 @@
       "MainSkillName":"Itto Secret Style: Housenka",
       "MainSkillActive":"Creates a gravity zone that pulls all enemies in towards her and deals 200% (Max 400%) damage to make them groggy.",
       "MainSkillPassive":"Deals 100% (Max 200%) damage to all enemies every 5 seconds with a 30% chance.",
-      "CD":56
+      "CD":56,
+      "Status":"Released"
    },
    {
       "Name":"Fujibayashi Yuno",
@@ -687,7 +732,8 @@
       "MainSkillName":" Beast Art: Familiar",
       "MainSkillActive":"Becomes invulnerable for 7 (Max 14) seconds.",
       "MainSkillPassive":"Increases critical damage of normal attacks by 28% (Max 56%)",
-      "CD":65
+      "CD":65,
+      "Status":"Released"
    },
    {
       "Name":"Kamimura Maika",
@@ -702,7 +748,8 @@
       "MainSkillName":"Grenade",
       "MainSkillActive":"Deals 290% (Max 580%) damage to all enemies, and burns them for additional 24% (Max 48%) damage for 10 seconds.",
       "MainSkillPassive":false,
-      "CD":51
+      "CD":51,
+      "Status":"Released"
    },
    {
       "Name":"Koukawa Asuka",
@@ -717,7 +764,8 @@
       "MainSkillName":"Kill-Em-All Missiles",
       "MainSkillActive":"Launches a rocket punch that deals 350% (Max 700%) damage and knocks back the target.",
       "MainSkillPassive":"When dodging incoming attacks, she fires a small missile that deals 40% (Max 80%) damage and knocks back her target (applied every 5 seconds).",
-      "CD":50
+      "CD":50,
+      "Status":"Released"
    },
    {
       "Name":"Anemone",
@@ -732,7 +780,8 @@
       "MainSkillName":"Anubis Call",
       "MainSkillActive":"Deals 285% (Max 570%) damage to all enemies, and reduces their HP restore by 35% (Max 70%) for 15 seconds.",
       "MainSkillPassive":false,
-      "CD":57
+      "CD":57,
+      "Status":"Released"
    },
    {
       "Name":"Laetitia Bellmer",
@@ -747,7 +796,8 @@
       "MainSkillName":"Aqua Mistress",
       "MainSkillActive":"Removes 1 (Max 3) debuff; deals 234% (Max 468%) damage and knocks up up to 3 enemies into the air.",
       "MainSkillPassive":false,
-      "CD":51
+      "CD":51,
+      "Status":"Released"
    },
    {
       "Name":"Tekkain Koharu",
@@ -762,7 +812,8 @@
       "MainSkillName":"Elec Art: Display",
       "MainSkillActive":"Deals 255% (Max 510%) damage to all enemies; reduces speed of Machine-type enemies by 75% (Max 150%) for 8 seconds.",
       "MainSkillPassive":false,
-      "CD":51
+      "CD":51,
+      "Status":"Released"
    },
    {
       "Name":"Felicia",
@@ -777,7 +828,8 @@
       "MainSkillName":"Scythe of Punishment",
       "MainSkillActive":"Deals 238% (Max: 476%) damage to all enemies within the area; inflicts Bleed that deals 238% (Max: 476%) damage against Human-type enemies for 7.5 seconds",
       "MainSkillPassive":false,
-      "CD":48
+      "CD":48,
+      "Status":"Released"
    },
    {
       "Name":"[Draconic] Su Jinglei",
@@ -792,7 +844,8 @@
       "MainSkillName":"Beast Art: Ryuuhajin",
       "MainSkillActive":"Sends a black draconic wave ahead to deal 400% (Max 800%) damage and to remove the enemy’s Super Armor (not applied in Arena)",
       "MainSkillPassive":"Basic melee attacks give a 15% chance of gaining Super Armor for 1 second (Max 2 seconds).",
-      "CD":40
+      "CD":40,
+      "Status":"Released"
    },
    {
       "Name":"Misaki Akane",
@@ -807,7 +860,8 @@
       "MainSkillName":"Sound Art: Power Word",
       "MainSkillActive":"Deals 280% (Max 560%) damage and knocks back all enemies within close range; immediately restores 15% (Max 30%) of your lost HP.",
       "MainSkillPassive":false,
-      "CD":53
+      "CD":53,
+      "Status":"Released"
    },
    {
       "Name":"Kuramochi Keito",
@@ -821,8 +875,9 @@
       "SubSkill":"Increases damage dealt with ranged attacks on snared enemies by 12% (Max 24%); increases critical rate of ranged attacks on snared enemies by 8% (Max 16%) for 7 seconds upon scoring a critical hit.",
       "MainSkillName":"Shadow Art: Fiend's Bow",
       "MainSkillActive":"Make multiple attacks that deals 265% (Max 530%) damage within the area.",
-      "MainSkillPassive": "Snares up to 4 random enemies for 3 seconds (Max 6 seconds). Applies every 4.5 seconds with a 50% chance.",
-      "CD":53
+      "MainSkillPassive":"Snares up to 4 random enemies for 3 seconds (Max 6 seconds). Applies every 4.5 seconds with a 50% chance.",
+      "CD":53,
+      "Status":"Released"
    },
    {
       "Name":"Onisaki Kirara",
@@ -836,7 +891,185 @@
       "SubSkill":"Reduces damage taken from all enemies by 15% (Max 30%); increases HP restored from all sources by 10% (Max 20%).",
       "MainSkillName":"Super Freeze",
       "MainSkillActive":"Ice storm deals 500% (Max 1000%) damage and freezes all enemies in the line for 5 seconds.",
-      "MainSkillPassive": "20% chance of dealing 55% (Max 110%) damage and freezing all enemies nearby for 2 seconds upon being attacked.",
-      "CD":63
+      "MainSkillPassive":"20% chance of dealing 55% (Max 110%) damage and freezing all enemies nearby for 2 seconds upon being attacked.",
+      "CD":63,
+      "Status":"Released"
+   },
+   
+   {
+      "Name":"Sakuragi Suruga",
+      "Number":57,
+      "Type":"Assist",
+      "Rarity":"UR",
+      "Source":"Standard Gacha",
+      "Unawakened": "000_0",
+      "Awakened":"000_0",
+      "SubSkillName":"Cat's Hunting Hands",
+      "SubSkill":"Increases critical rate of all attacks by 8% (Max 16%); Increases critical damage of all attacks by 16% (Max 32%).",
+      "MainSkillName":"Beast Art: Rabid Claws",
+      "MainSkillActive":"Claw 1 enemy to inflict 680% (Max 1360%) damage, and a bleed effect of 72% (Max 144%) damage.",
+      "MainSkillPassive":false,
+      "CD":50,
+      "Status":"Released"
+   },
+   {
+      "Name":"Shirayuki",
+      "Number":58,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Event",
+      "Unawakened":"000_0",
+      "Awakened":"000_1",
+      "SubSkillName":"Demonic Wanderer",
+      "SubSkill":"Increases damage dealt by a Demon-type character by 18% (Max 36%).",
+      "MainSkillName":"Cluster Ice Blaster",
+      "MainSkillActive":"Shoots a cluster of ice that deals 580% (Max 1160%) damage and reduces the target's speed by 20% (Max 40%) for 10 seconds.",
+      "MainSkillPassive":false,
+      "CD":55,
+      "Status":"Released"
+   },
+   {
+      "Name":"Emily Simmons",
+      "Number":59,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Limited Gacha / Event - Box 10 \"Summer Pool Cleanup!\"",
+      "Unawakened":"059_0",
+      "Awakened":"059_1",
+      "SubSkillName":"Combat Engineer",
+      "SubSkill":"Reduces damage taken from Machine-type enemies by 7% (Max 14%); increases damage dealt to Machine-type enemies by 12% (Max 24%).",
+      "MainSkillName":"Homing Drone",
+      "MainSkillActive":"Summons a drone that performs a consecutive attack of 45% (Max 90%) damage to a single enemy for 12 seconds.",
+      "MainSkillPassive":false,
+      "CD":65,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"Ise Nodoka",
+      "Number":60,
+      "Type":"Assist",
+      "Rarity":"UR",
+      "Source":"Event: Summer Pool Cleanup!",
+      "Unawakened":"060_0",
+      "Awakened":"060_1",
+      "SubSkillName":"Orphanage Onee-chan",
+      "SubSkill":"8% (Max 16%) increase in the amount of gold earned upon completing a quest.",
+      "MainSkillName":"Mirror Art: Suigetsu",
+      "MainSkillActive":"Deals 274% (Max 548%) damage to a random enemy (max 3) and disarms them for 5 (Max 10) seconds.",
+      "MainSkillPassive":false,
+      "CD":54,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"Furfur",
+      "Number":61,
+      "Type":"Protect",
+      "Rarity":"UR",
+      "Source":"Standard Gacha",
+      "Unawakened":"061_0",
+      "Awakened":"061_1",
+      "SubSkillName":"Amahara Information Broker",
+      "SubSkill":"Increases damage dealt to demon-type enemies by 12% (Max 24%); Reduces damage taken from machine-type enemies by 10% (Max 20%).",
+      "MainSkillName":"Demonic Bugs",
+      "MainSkillActive":"Implants a bug in all enemies dealing 350% (Max 700%) damage and inflicting bleed for 72% (Max 144%) damage for 7.5 seconds.",
+      "MainSkillPassive":false,
+      "CD":55,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"Nagi Kotone",
+      "Number":62,
+      "Type":"Assist",
+      "Rarity":"UR",
+      "Source":"Event: Invitation from Amahara",
+      "Unawakened":"062_0",
+      "Awakened":"062_1",
+      "SubSkillName":"Gosha Troublemaker",
+      "SubSkill":"Increases damage dealt by melee attacks by 15% (Max 30%).",
+      "MainSkillName":"Wood Art: Arsenal Grove",
+      "MainSkillActive":"Sprouts tree trunks from the ground that knock up all enemies and deal 400% (Max 800%) damage.",
+      "MainSkillPassive":false,
+      "CD":58,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"Inokura Suzuka",
+      "Number":63,
+      "Type":"Assist",
+      "Rarity":"UR",
+      "Source":"Standard Gacha",
+      "Unawakened":"063_0",
+      "Awakened":"063_1",
+      "SubSkillName":"Scarlet Yaksha Princess",
+      "SubSkill":"When dodging incoming attacks, you take 4% (Max 8%) less damage from all enemies for 5 seconds (stacks up to 5 times).",
+      "MainSkillName":"Scarlet Art: Scarlet Miasma",
+      "MainSkillActive":"Generates a scarlet mist that inflicts groggy on all enemies in range and deals 530% (Max 1060%) damage.",
+      "MainSkillPassive":false,
+      "CD":64,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"Nino Weaver",
+      "Number":64,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Event: The Cannon Warrior and Fortune Teller",
+      "Unawakened":"064_0",
+      "Awakened":"064_1",
+      "SubSkillName":"UFS Mobile Artillery",
+      "SubSkill":"Increases damage dealt by ranged attack by 15% (Max 30%).",
+      "MainSkillName":"Prototype Particle Cannon",
+      "MainSkillActive":"Fires a magic cannon that stuns all enemies in a line and deals 600% (Max 1200%) damage.",
+      "MainSkillPassive":false,
+      "CD":46,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"[Judgement] Mizuki Yukikaze",
+      "Number":65,
+      "Type":"Assist",
+      "Rarity":"UR",
+      "Source":"Limited Gacha",
+      "Unawakened":"065_0",
+      "Awakened":"065_1",
+      "SubSkillName":"Artificial Thunder God",
+      "SubSkill":"Reduces damage taken from human-type enemies by 20% (Max 40%); normal attacks have a 10% chance to deal an additional 100% (Max 200%) damage.",
+      "MainSkillName":"Ninja Art: Phantom Lightning",
+      "MainSkillActive":"Strike a single enemy with a bolt of judgement that deals 666% (Max 1332%) damage. If this kills it, reduce the cooldown time by 10%, and strike another enemy with the bolt.",
+      "MainSkillPassive":false,
+      "CD":66,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"Kikuchi Aoi",
+      "Number":66,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Standard Gacha",
+      "Unawakened":"066_0",
+      "Awakened":"066_1",
+      "SubSkillName":"Rockin' Spirit",
+      "SubSkill":"Reduces damage taken from melee attacks by 15% (Max 30%); reduces cooldown of supporter skills by 5% (Max 10%).",
+      "MainSkillName":"Sound Art: Dissonant Wave",
+      "MainSkillActive":"Emits a soundwave that deals 450% (Max 900%) damage to all enemies and snares them for 5 (Max 10) seconds.",
+      "MainSkillPassive":false,
+      "CD":43,
+      "Status":"Unreleased"
+   },
+   {
+      "Name":"Mekamura Uraru",
+      "Number":67,
+      "Type":"Protect",
+      "Rarity":"UR",
+      "Source":"Event: Contaminated Gosha Forest~~",
+      "Unawakened":"067_0",
+      "Awakened":"067_1",
+      "SubSkillName":"Unauthorized Modifications",
+      "SubSkill":"Increases damage dealt by Machine-type character by 18% (Max 36%).",
+      "MainSkillName":"Catastrophic Gear",
+      "MainSkillActive":"Sets a trap that deals 420% (Max 840%) damage and knocks back the triggering enemies.",
+      "MainSkillPassive":false,
+      "CD":40,
+      "Status":"Unreleased"
    }
 ]

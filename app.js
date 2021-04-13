@@ -23,7 +23,7 @@ fs.writeFile('supporters.html', allSupportersHTML.html(), (error) => { console.l
 
 
 function SupporterJSONtoHTML(supporter) {
-    var template = fs.readFileSync("template.html");
+    var template = fs.readFileSync("./supporters_html/template.html");
     var templateHTML = cheerio.load(template);
     templateHTML("#Name").text("No. " + supporter.Number + ": " + supporter.Name);
 
@@ -45,6 +45,7 @@ function SupporterJSONtoHTML(supporter) {
         templateHTML("#Rarity").attr("src","../wiki_icons/ur.png");
     }
     templateHTML("#Source").append(supporter.Source);
+    templateHTML("#Status").append(supporter.Status);
     // Set Unawakened, Awakened, and starting Video
     templateHTML("#UnawakenedButton").attr("onclick","document.getElementById('SupporterImage').src='../supporter_images/" + supporter.Unawakened + ".png'");
     templateHTML("#AwakenedButton").attr("onclick","document.getElementById('SupporterImage').src='../supporter_images/" + supporter.Awakened + ".png'");

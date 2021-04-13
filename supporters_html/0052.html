@@ -6,62 +6,228 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="../style.css">
   </head>
 
   <body>
     <ul>
+      <img src="../assets/images/at_animated_logo.gif" alt="Action_Taimanin_Discord" style="width: 240px; height: auto">
+
       <li><a href="../index.html">Home</a></li>
       <li><a class="active" href="../supporters.html">Supporters</a></li>
       <li><a href="../supporters.json">JSON</a></li>
+
+      <div class="discord-navigator">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+              <img src="../assets/images/at_discord_invite_qr_code.png" alt="Action Taimanin Discord QR Code" class="discord-qr-code">
+            </div>
+
+            <div class="col-6 px-0 d-flex align-items-center">
+              <div class="discord-link-bg d-flex align-items-center">
+                <a href="https://discord.gg/GTcDmfzyJx" target="_blank" class="discord-link">
+                  <div>
+                    <span style="font-size: 16px">🡆</span>
+                    <span style="font-size: 16px">Action</span>
+                  </div>
+                  <div style="font-size: 16px">Taimanin</div>
+                  <div style="font-size: 18px; font-weight: 600">Discord</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </ul>
 
-
     <div class="main-content">
-      <h1 id="Name">No. 52: Felicia</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 mb-5">
+            <h2 id="Name" class="font-weight-bold">No. 52: Felicia</h2>
+          </div>
+        </div>
 
-      <h2>
+        <div class="row">
+          <!-- SECTION: info section -->
+
+          <div class="col-lg-6 mb-3">
+            <div class="row">
+              <div class="col-12 mb-3 d-flex align-items-center">
+                <h3 class="font-weight-bold mr-3">Type:</h3>
+                <img id="Type" src="../wiki_icons/suppress.png" class="mr-4" style="height: 34px" title="Type">
+
+                <h3 class="font-weight-bold mr-3">Rarity:</h3>
+                <img id="Rarity" src="../wiki_icons/ur.png" style="height: 34px" title="Rarity">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <h4 title="Source" ,="" id="Source" class="font-weight-bold">
+                  Source:
+                  <!-- Standard Gacha -->
+                Event: Felicia's Prank</h4>
+              </div>
+
+              <div class="col-12 mb-3">
+                <h4 title="Status" ,="" id="Status" class="font-weight-bold">
+                  Status:
+                  <!-- Released -->
+                Released</h4>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <hr style="border-color: #6e6e6e">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <h4 title="SubSkill" id="SubSkill" class="font-weight-bold">Sub Skill: <u id="SubSkillName">Prime Bloodline</u></h4>
+              </div>
+
+              <div class="col-12 mb-3">
+                <span style="font-size: 16px" title="SubSkillText">
+                  <i id="SubSkillText">Increases damage dealt to Human-type enemies by 9% (Max: 18%); restores 1% (Max: 2%) of lost HP every 3 seconds for 15 seconds upon scoring a critical hit</i>
+                </span>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <hr style="border-color: #6e6e6e">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 mb-3">
+                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Lead Skill: <u id="LeadSkillName">Scythe of Punishment</u> CD: 48s</h4>
+              </div>
+
+              <div class="col-12 mb-3">
+                <h5 title="ActiveSkill" id="ActiveSkill" class="font-weight-bold mr-3 mb-3">
+                  <!-- Active Skill: -->
+                </h5>
+
+                <span style="font-size: 16px" title="ActiveSkillText">
+                  <i id="ActiveSkillText" class="mb-3">Deals 238% (Max: 476%) damage to all enemies within the area; inflicts Bleed that deals 238% (Max: 476%) damage against Human-type enemies for 7.5 seconds</i>
+                </span>
+              </div>
+
+              <div class="col-12 mb-3">
+                <h5 title="PassiveSkill" id="PassiveSkill" class="font-weight-bold mr-3 mb-3">
+                  <!-- Passive Skill: -->
+                </h5>
+
+                <span style="font-size: 16px" title="PassiveSkillText">
+                  <i id="PassiveSkillText" class="mb-3">
+                    <!-- Increases critical damage of normal attacks by 28% (Max 56%). -->
+                  </i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION: image section -->
+
+          <div class="col-lg-6 mb-3" style="border-left: 1px solid #6e6e6e">
+            <div class="row">
+              <div class="col-4 mb-5 d-flex align-items-center">
+                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/052_0.png'">
+                  Unawakened
+                </button>
+
+                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/052_1.png'">
+                  Awakened
+                </button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/052_0.png" style="width: 500px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <h1 id="Name">Supporter Name</h1> -->
+
+      <!-- <h2>
         Type:
-        <img id="Type" src="../wiki_icons/suppress.png" style="width: 30px" title="Type">
-      </h2>
+        <img
+          id="Type"
+          src="../wiki_icons/protect.png"
+          style="width: 30px"
+          title="Type"
+        />
+      </h2> -->
 
-      <h2>
+      <!-- <h2>
         Rarity:
-        <img id="Rarity" src="../wiki_icons/ur.png" style="width: 50px" title="Rarity">
-      </h2>
+        <img
+          id="Rarity"
+          src="../wiki_icons/sr.png"
+          style="width: 50px"
+          title="Rarity"
+        />
+      </h2> -->
 
-      <h2 title="Source" ,="" id="Source">Source:Event: Felicia's Prank</h2>
+      <!-- <h2 title="Source" , id="Source">Source:</h2> -->
 
-      <button title="UnawakenedButton" id="UnawakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/052_0.png'">
+      <!-- <h2 title="Status" , id="Status">Status:</h2> -->
+
+      <!-- <button
+        title="UnawakenedButton"
+        id="UnawakenedButton"
+        onclick="document.getElementById('SupporterImage').src='../supporter_images/001_0.png'"
+      >
         Unawakened
-      </button>
+      </button> -->
 
+      <!-- <button
 
-      <button title="AwakenedButton" id="AwakenedButton" onclick="document.getElementById('SupporterImage').src='../supporter_images/052_1.png'">
+        title="AwakenedButton"
+        id="AwakenedButton"
+        onclick="document.getElementById('SupporterImage').src='../supporter_images/001_1.png'"
+      >
         Awakened
-      </button>
+      </button> -->
 
-      <br>
+      <!-- <br /> -->
 
-      <img title="SupporterImage" id="SupporterImage" src="../supporter_images/052_0.png" style="width: 500px">
+      <!-- <img
+        title="SupporterImage"
+        id="SupporterImage"
+        src="../supporter_images/001_0.png"
+        style="width: 500px"
+      /> -->
 
-      <h2 title="SubSkill" id="SubSkill">Sub Skill: <u id="SubSkillName">Prime Bloodline</u></h2>
+      <!-- <h2 title="SubSkill" id="SubSkill"><u id="SubSkillName"></u></h2> -->
 
-      <p style="font-size: 16px" title="SubSkillText">
-        <i id="SubSkillText">Increases damage dealt to Human-type enemies by 9% (Max: 18%); restores 1% (Max: 2%) of lost HP every 3 seconds for 15 seconds upon scoring a critical hit</i>
-      </p>
+      <!-- <p style="font-size: 16px" title="SubSkillText">
+        <i id="SubSkillText"></i>
+      </p> -->
 
-      <h2 title="LeadSkill" id="LeadSkill">Lead Skill: <u id="LeadSkillName">Scythe of Punishment</u> CD: 48s</h2><h3 title="ActiveSkill" id="ActiveSkill"></h3>
+      <!-- <h2 title="LeadSkill" id="LeadSkill">
+        <i id="LeadSkillName"></i>
+        <text title="CD" id="CD"></text>
+        <h3 title="ActiveSkill" id="ActiveSkill"></h3>
         <p style="font-size: 16px" title="ActiveSkillText">
-          <i id="ActiveSkillText">Deals 238% (Max: 476%) damage to all enemies within the area; inflicts Bleed that deals 238% (Max: 476%) damage against Human-type enemies for 7.5 seconds</i>
+          <i id="ActiveSkillText"></i>
         </p>
         <h3 title="PassiveSkill" id="PassiveSkill"></h3>
         <p style="font-size: 16px" title="PassiveSkillText">
           <i id="PassiveSkillText"></i>
         </p>
-      
+      </h2> -->
     </div>
   
 
