@@ -55,6 +55,11 @@ li a {
   text-decoration: none;
 }
 
+li.guide_dropdown {
+  padding: 10px;
+  height: 50%;
+}
+
 li a.active {
 
   background-color: #e60012;
@@ -171,4 +176,124 @@ a.discord-link:hover {
 #supporters {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+#beginner_guide_text p{
+  font-size: 20px;
+  min-width: 30%;
+  max-width: 80%;
+}
+
+#beginner_guide_text img{
+  min-width: 20%;
+  max-width: 40%;
+}
+
+#beginner_guide_text a:link {
+  color: #e60012;
+  background-color: transparent;
+  text-decoration: none;
+  border-bottom: none;
+  
+}
+
+#beginner_guide_text iframe{
+  width: 2600px;
+  height: 1200px;
+  max-height: 1200px;
+  margin:0px;
+  padding:0px;
+  border:none;
+  overflow:hidden;
+
+  
+  
+}
+
+#beginner_guide_text h2 {
+  font-weight: bold;
+  font-size: 36;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+#beginner_guide_text h3 {
+  font-weight: bold;
+  font-size: 30;
+}
+
+#beginner_guide_text h4 {
+  font-weight: bold;
+  font-size: 24;
+  
+}
+#beginner_guide_text h5 {
+  font-weight: bold;
+  font-size: 24;
+  
+}
+
+#beginner_guide_text a:visited{
+  color: #e60012;
+  background-color: transparent;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+
+#toc_list::-webkit-scrollbar {
+  display: none;
+}
+
+#toc_list a:link {
+  color: #bebdbd;
+  background-color: transparent;
+  text-decoration: none;
+
+  
+}
+#toc_list a:hover:not(.active) {
+  color: #e60012;
+  background-color: transparent;
+  text-decoration: none;
+
+  
+}
+
+#toc_list a:visited {
+  color: #bebdbd;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+#toc_list {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: calc(100vh - 6rem);
+
+  position: static;
+  height: 40%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  
+}
+
+#toc_list ul {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: calc(100vh - 6rem);
+
+  position: static;
+  height: 40%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding-left: 2%;
 }
