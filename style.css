@@ -250,24 +250,21 @@ a.discord-link:hover {
 }
 
 
-#toc_list::-webkit-scrollbar {
+#reroll_guide_dropdown::-webkit-scrollbar {
   display: none;
 }
 
-  
-#menu a {
-  margin:0;
-  padding: 0;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
 
-#toc_list a:link {
+.dropdown_list::-webkit-scrollbar {
+  display: none;
+}
+  
+.dropdown_list a:link {
   color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 }
-#toc_list a:hover:not(.active) {
+.dropdown_list a:hover:not(.active) {
   color: #e60012;
   background-color: transparent;
   text-decoration: none;
@@ -275,18 +272,19 @@ a.discord-link:hover {
   
 }
 
-#toc_list a:visited {
+.dropdown_list a:visited {
   color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 
 }
-#toc_list {
+.dropdown_list {
   /* Remove default list styling */
   list-style-type: none;
   padding: 0;
   margin: 0;
   height: auto;
+  
 
   position: static;
   -ms-overflow-style: none; /* IE and Edge */
@@ -295,7 +293,7 @@ a.discord-link:hover {
   
 }
 
-#toc_list ul {
+.dropdown_list ul {
   /* Remove default list styling */
   list-style-type: none;
   padding: 0;
@@ -305,9 +303,10 @@ a.discord-link:hover {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   padding-left: 5%;
+  
 }
 
-#toc_list li {
+.dropdown_list li {
   /* Remove default list styling */
   padding: 0;
   margin: 0;
@@ -315,3 +314,69 @@ a.discord-link:hover {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.menu a {
+  margin:0;
+  padding: 0;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#reroll_guide_dropdown a:link {
+  color: #e60012;
+  background-color: transparent;
+  text-decoration: none;
+}
+#reroll_guide_dropdown a:hover:not(.active) {
+  color: #e60012;
+  background-color: transparent;
+  text-decoration: none;
+
+  
+}
+
+#reroll_guide_dropdown a:visited {
+  color: #ff0404;
+  background-color: transparent;
+  text-decoration: none;
+
+}
+#reroll_guide_dropdown {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  
+
+  position: static;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  width : auto;
+  
+}
+
+#reroll_guide_dropdown ul {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: static;
+  overflow: hidden; /* Hide scrollbars */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding-left: 2%;
+  width : auto;
+  
+}
+
+#reroll_guide_dropdown li {
+  /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+  overflow: hidden; /* Hide scrollbars */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+

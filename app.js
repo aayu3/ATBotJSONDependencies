@@ -15,7 +15,7 @@ allSupportersHTML("#supporters").empty();
 for (var i = 0; i < supporters.length; i ++) {
     var numString = (i+1).toString();
     numString = "0".repeat(4-numString.length) + numString; 
-    allSupportersHTML("#supporters").append("<li><a href=\"supporters_html/" + numString + ".html\">" + supporters[i].Name + "</a></li>\n");
+    allSupportersHTML("#supporters").append("<li><a  target = \"_blank\" href=\"supporters_html/" + numString + ".html\">" + supporters[i].Name + "</a></li>\n");
     let supporterHTML = SupporterJSONtoHTML(supporters[i]).toString();
     fs.writeFile("./supporters_html/" + numString + ".html", supporterHTML, (error) => { console.log("Unable to add " + numString +".html")});
 }

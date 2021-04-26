@@ -410,7 +410,7 @@
       "SubSkillName":"Eclipse Meld: Connect",
       "SubSkill":"Reduces damage taken from bosses by 20% (Max 40%)",
       "MainSkillName":"Main Skill: Eclipse Meld: Roar",
-      "MainSkillActive":"Remove all combos; increases damage dealt and critical damage by 1% (Max 2%) for 10 seconds",
+      "MainSkillActive":"Remove all combos; increases damage dealt and critical damage by 1% (Max 2%) for 10 seconds. (Max. 100 Combos).",
       "MainSkillPassive":false,
       "CD":48,
       "Status":"Released"
