@@ -33,8 +33,15 @@ fs.writeFile('supporters.html', allSupportersHTML.html(), (error) => { console.l
 function SupporterJSONtoHTML(supporter) {
     var template = fs.readFileSync("./supporters_html/template.html");
     var templateHTML = cheerio.load(template);
+    // Set meta tags
     templateHTML("#Name").text("No. " + supporter.Number + ": " + supporter.Name);
-
+    templateHTML("#metaTitle").attr("content",supporter.Name);
+    templateHTML("#metaDescription").attr("content","Wiki page for " + supporter.Name + ".");
+    templateHTML("#metaImage").attr("content","https://aayu3.github.io/ATBotJSONDependencies/supporter_images/" + supporter.Preview + ".png");
+    templateHTML("#ogTitle").attr("content",supporter.Name);
+    templateHTML("#ogDescription").attr("content","Wiki page for " + supporter.Name + ".");
+    templateHTML("#ogImage").attr("content","https://aayu3.github.io/ATBotJSONDependencies/supporter_images/" + supporter.Preview + ".png");
+    templateHTML("#faviconInfo").attr("href", "../supporter_images/" + supporter.Preview + ".png");
     // Set type
     if (supporter.Type === "Protect") {
         templateHTML("#Type").attr("src","../wiki_icons/protect.png");
