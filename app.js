@@ -9,6 +9,14 @@ var supporters = JSON.parse(rawdata);
 var html = fs.readFileSync("supporters.html");
 
 
+/*
+for (var i = 0; i < supporters.length; i ++) {
+    supporters[i]["Preview"] = supporters[i].Unawakened.split("_")[0];
+}
+var newData = JSON.stringify(supporters);
+fs.writeFile('supporters.json', newData, (error) => { console.log("Unable to add preview image") });
+*/
+
 const allSupportersHTML = cheerio.load(html);
 // Used to clear old data
 allSupportersHTML("#supporters").empty();
