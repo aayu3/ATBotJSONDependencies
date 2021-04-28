@@ -58,6 +58,35 @@
         <div class="row">
           <div class="col-12">
             <input type="text" id="supporterSearch" onkeyup="searchSupporters()" placeholder="Search for supporters..">
+            <h2><u>Filter</u></h2>
+            <h3>Type:</h3>
+            <input type="radio" id="assistButton" name="supporterType" value="assist">
+            <label for="assistButton"><img src="wiki_icons/assist.png" width = 100%></label>
+            <input type="radio" id="protectButton" name="supporterType" value="protect">
+            <label for="protectButton"><img src="wiki_icons/protect.png" width = 100%></label>
+            <input type="radio" id="suppressButton" name="supporterType" value="suppress">
+            <label for="suppressButton"><img src="wiki_icons/suppress.png" width = 100%></label>
+            <h3>Rarity:</h3>
+            <input type="radio" id="urButton" name="supporterRarity" value="ur">
+            <label for="urButton"><img src="wiki_icons/ur.png" width = 65%></label>
+            <input type="radio" id="srButton" name="supporterRarity" value="sr">
+            <label for="srButton"><img src="wiki_icons/sr.png" width = 65%></label>
+            <input type="radio" id="rareButton" name="supporterRarity" value="rare">
+            <label for="rareButton"><img src="wiki_icons/rare.png" width = 115%></label>
+            <h3>Source:</h3>
+            <input type="radio" id="standardGachaButton" name="supporterSource" value="standard">
+            <label for="standardGachaButton">Standard Gacha</label>
+            <input type="radio" id="limitedGachaButton" name="supporterSource" value="limited">
+            <label for="limitedGachaButton">Limited Gacha</label>
+            <input type="radio" id="eventButton" name="supporterSource" value="event">
+            <label for="eventButton">Event</label>
+            <h3>Status:</h3>
+            <input type="radio" id="releasedButton" name="supporterStatus" value="released">
+            <label for="releasedButton">Released</label>
+            <input type="radio" id="unreleasedButton" name="supporterStatus" value="unreleased">
+            <label for="unreleasedButton">Unreleased</label>
+            <br><button onclick="filter()">Filter</button>
+            <button onclick="clearFilter()">Clear</button>
           </div>
         </div>
 
@@ -138,6 +167,7 @@
     </div>
 
     <script>
+      var filteredSupporters = [];
       function searchSupporters() {
         // Declare variables
         var input, filter, ul, li, a, i, txtValue;
@@ -146,17 +176,166 @@
         ul = document.getElementById("supporters");
         li = ul.getElementsByTagName("li");
 
+        // convert filteredsupporters to a list of names
+        var filteredSupporterNames = [];
+        for (var i = 0; i < filteredSupporters.length; i++) {
+            filteredSupporterNames.push(filteredSupporters[i].Name);
+        }
+
         // Loop through all list items, and hide those who don't match the search query
         for (i = 0; i < li.length; i++) {
           a = li[i].getElementsByTagName("a")[0];
           txtValue = a.textContent || a.innerText;
           if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
+            if (filteredSupporterNames.includes(txtValue)) {
+              li[i].style.display = "";
+            }
           } else {
             li[i].style.display = "none";
           }
         }
       }
+
+      async function clearFilter() {
+        console.log("filter cleared");
+        filteredSupporters = [];
+        var supporterJSON = await getData("https://aayu3.github.io/ATBotJSONDependencies/supporters.json");
+        for (var i = 0; i < supporterJSON.length; i++) {
+            filteredSupporters.push(supporterJSON[i]);
+        }
+
+        // convert filteredsupporters to a list of names
+        var filteredSupporterNames = [];
+        for (var i = 0; i < filteredSupporters.length; i++) {
+            filteredSupporterNames.push(filteredSupporters[i].Name);
+        }
+        ul = document.getElementById("supporters");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          li[i].style.display = "";
+        }
+        
+
+      }
+
+      async function filter() {
+        console.log("filtering...")
+        // Clear array for new filter call
+        filteredSupporters = [];
+        var supporterJSON = await getData("https://aayu3.github.io/ATBotJSONDependencies/supporters.json");
+        for (var i = 0; i < supporterJSON.length; i++) {
+            filteredSupporters.push(supporterJSON[i]);
+        }
+        filterType();
+        filterRarity();
+        filterSource();
+        filterStatus();
+        // convert filteredsupporters to a list of names
+        var filteredSupporterNames = [];
+        for (var i = 0; i < filteredSupporters.length; i++) {
+            filteredSupporterNames.push(filteredSupporters[i].Name);
+        }
+        ul = document.getElementById("supporters");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (filteredSupporterNames.includes(txtValue)) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+            
+          }
+
+      }
+      async function filterType() {
+        const radioButtons = document.querySelectorAll('input[name="supporterType"]');
+        let selectedValue;
+        
+        for (const rb of radioButtons) {
+          if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+          }
+        }
+        if (selectedValue) {
+          let newFilteredList = [];
+          for (var i = 0; i < filteredSupporters.length; i++) {
+            if (filteredSupporters[i].Type.toUpperCase() === selectedValue.toUpperCase()) {
+              newFilteredList.push(filteredSupporters[i]);
+            }
+          }
+          filteredSupporters = newFilteredList;
+        }
+      }
+
+      async function filterRarity() {
+        const radioButtons = document.querySelectorAll('input[name="supporterRarity"]');
+        let selectedValue;
+        for (const rb of radioButtons) {
+          if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+          }
+        }
+        if (selectedValue) {
+          let newFilteredList = [];
+          for (var i = 0; i < filteredSupporters.length; i++) {
+            if (filteredSupporters[i].Rarity.toUpperCase() === selectedValue.toUpperCase()) {
+              newFilteredList.push(filteredSupporters[i]);
+            }
+          }
+          filteredSupporters = newFilteredList;
+        }
+      }
+
+      async function filterSource() {
+        const radioButtons = document.querySelectorAll('input[name="supporterSource"]');
+        let selectedValue;
+        for (const rb of radioButtons) {
+          if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+          }
+        }
+        if (selectedValue) {
+          let newFilteredList = [];
+          for (var i = 0; i < filteredSupporters.length; i++) {
+            if (filteredSupporters[i].Source.toUpperCase().includes(selectedValue.toUpperCase())) {
+              newFilteredList.push(filteredSupporters[i]);
+            }
+          }
+          filteredSupporters = newFilteredList;
+        }
+      }
+
+      async function filterStatus() {
+        const radioButtons = document.querySelectorAll('input[name="supporterStatus"]');
+        let selectedValue;
+        for (const rb of radioButtons) {
+          if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+          }
+        }
+        if (selectedValue) {
+          let newFilteredList = [];
+          for (var i = 0; i < filteredSupporters.length; i++) {
+            if (filteredSupporters[i].Status.toUpperCase() === selectedValue.toUpperCase()) {
+              newFilteredList.push(filteredSupporters[i]);
+            }
+          }
+          filteredSupporters = newFilteredList;
+        }
+      }
+
+      async function getData(url) {
+        const response = await fetch(url);
+        return response.json();
+      }
+      /* This code does nothing RN
+
 
       async function getSupporters() {
         const response = await fetch("./supporters.json");
@@ -186,6 +365,7 @@
         }
       }
       getSupporters();
+      */
     </script>
   
 
