@@ -1,2 +1,2 @@
 # ATBotJSONDependencies
-Checkout the website at: https://actiontaiman.in/
+Checkout the website at: http://actiontaiman.in/
