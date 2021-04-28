@@ -204,6 +204,16 @@
             filteredSupporters.push(supporterJSON[i]);
         }
 
+        // clear radio buttons
+        var inputs = document.getElementsByTagName('input');
+
+      for(var i = 0; i < inputs.length; i++) {
+          if(inputs[i].type.toLowerCase() == 'radio') {
+              inputs[i].checked = false;
+          }
+      }
+            
+
         // convert filteredsupporters to a list of names
         var filteredSupporterNames = [];
         for (var i = 0; i < filteredSupporters.length; i++) {
