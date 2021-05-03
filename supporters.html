@@ -199,7 +199,7 @@
       async function clearFilter() {
         console.log("filter cleared");
         filteredSupporters = [];
-        var supporterJSON = await getData("http://www.actiontaiman.in/supporters.json");
+        var supporterJSON = await getData("http://actiontaiman.in/supporters.json");
         for (var i = 0; i < supporterJSON.length; i++) {
             filteredSupporters.push(supporterJSON[i]);
         }
@@ -231,7 +231,7 @@
         console.log("filtering...")
         // Clear array for new filter call
         filteredSupporters = [];
-        var supporterJSON = await getData("http://www.actiontaiman.in/supporters.json");
+        var supporterJSON = await getData("http://actiontaiman.in/supporters.json");
         for (var i = 0; i < supporterJSON.length; i++) {
             filteredSupporters.push(supporterJSON[i]);
         }
