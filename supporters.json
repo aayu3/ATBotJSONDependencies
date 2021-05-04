@@ -1137,5 +1137,22 @@
       "CD":40,
       "Status":"Unreleased",
       "Preview":"067"
+   },
+   {
+      "Name":"Ingrid",
+      "Number":68,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Limited Gacha",
+      "Unawakened":"068_0",
+      "Awakened":"068_1",
+      "SubSkillName":"Blooming Dark Flame",
+      "SubSkill":"Increases Particle charge from attacks by 110% (Max 220%); increases damage dealt with weapon skills by 20% (Max 40%); decreases Ultimate damage by 50%.",
+      "MainSkillName":"Dark Flame Sword",
+      "MainSkillActive":"Deals 400% (Max 800%) damage to all enemies and 80% burn damage for 20 seconds.",
+      "MainSkillPassive": "Normal attacks have a 10% chance of inflicting hellfire to the target for 10 seconds.",
+      "CD":64,
+      "Status":"Unreleased",
+      "Preview":"068"
    }
 ]
