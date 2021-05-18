@@ -159,6 +159,7 @@
 <li><a target="_blank" href="supporters_html/0065.html"><img src="supporter_images/065.png" width="5%" alt="[Judgement] Mizuki Yukikaze">[Judgement] Mizuki Yukikaze</a></li>
 <li><a target="_blank" href="supporters_html/0066.html"><img src="supporter_images/066.png" width="5%" alt="Kikuchi Aoi">Kikuchi Aoi</a></li>
 <li><a target="_blank" href="supporters_html/0067.html"><img src="supporter_images/067.png" width="5%" alt="Mekamura Uraru">Mekamura Uraru</a></li>
+<li><a target="_blank" href="supporters_html/0068.html"><img src="supporter_images/068.png" width="5%" alt="Ingrid">Ingrid</a></li>
 </ul>
 
           </div>
@@ -199,7 +200,7 @@
       async function clearFilter() {
         console.log("filter cleared");
         filteredSupporters = [];
-        var supporterJSON = await getData("http://www.actiontaiman.in/supporters.json");
+        var supporterJSON = await getData("https://actiontaiman.in/supporters.json");
         for (var i = 0; i < supporterJSON.length; i++) {
             filteredSupporters.push(supporterJSON[i]);
         }
@@ -231,7 +232,7 @@
         console.log("filtering...")
         // Clear array for new filter call
         filteredSupporters = [];
-        var supporterJSON = await getData("http://www.actiontaiman.in/supporters.json");
+        var supporterJSON = await getData("https://actiontaiman.in/supporters.json");
         for (var i = 0; i < supporterJSON.length; i++) {
             filteredSupporters.push(supporterJSON[i]);
         }

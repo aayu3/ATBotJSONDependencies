@@ -999,7 +999,7 @@
       "MainSkillActive":"Summons a drone that performs a consecutive attack of 45% (Max 90%) damage to a single enemy for 12 seconds.",
       "MainSkillPassive":false,
       "CD":65,
-      "Status":"Unreleased",
+      "Status":"Released",
       "Preview":"059"
    },
    {
@@ -1016,7 +1016,7 @@
       "MainSkillActive":"Deals 274% (Max 548%) damage to a random enemy (max 3) and disarms them for 5 (Max 10) seconds.",
       "MainSkillPassive":false,
       "CD":54,
-      "Status":"Unreleased",
+      "Status":"Released",
       "Preview":"060"
    },
    {
@@ -1033,7 +1033,7 @@
       "MainSkillActive":"Implants a bug in all enemies dealing 350% (Max 700%) damage and inflicting bleed for 72% (Max 144%) damage for 7.5 seconds.",
       "MainSkillPassive":false,
       "CD":55,
-      "Status":"Unreleased",
+      "Status":"Released",
       "Preview":"061"
    },
    {
@@ -1050,7 +1050,7 @@
       "MainSkillActive":"Sprouts tree trunks from the ground that knock up all enemies and deal 400% (Max 800%) damage.",
       "MainSkillPassive":false,
       "CD":58,
-      "Status":"Unreleased",
+      "Status":"Unreleased for Global players, lol.",
       "Preview":"062"
    },
    {
@@ -1067,7 +1067,7 @@
       "MainSkillActive":"Generates a scarlet mist that inflicts groggy on all enemies in range and deals 530% (Max 1060%) damage.",
       "MainSkillPassive":false,
       "CD":64,
-      "Status":"Unreleased",
+      "Status":"Unreleased for Global players, lol.",
       "Preview":"063"
    },
    {
@@ -1084,7 +1084,7 @@
       "MainSkillActive":"Fires a magic cannon that stuns all enemies in a line and deals 600% (Max 1200%) damage.",
       "MainSkillPassive":false,
       "CD":46,
-      "Status":"Unreleased",
+      "Status":"Released",
       "Preview":"064"
    },
    {
@@ -1101,7 +1101,7 @@
       "MainSkillActive":"Strike a single enemy with a bolt of judgement that deals 666% (Max 1332%) damage. If this kills it, reduce the cooldown time by 10%, and strike another enemy with the bolt.",
       "MainSkillPassive":false,
       "CD":66,
-      "Status":"Unreleased",
+      "Status":"Unreleased for Global players, lol.",
       "Preview":"065"
    },
    {
@@ -1118,7 +1118,7 @@
       "MainSkillActive":"Emits a soundwave that deals 450% (Max 900%) damage to all enemies and snares them for 5 (Max 10) seconds.",
       "MainSkillPassive":false,
       "CD":43,
-      "Status":"Unreleased",
+      "Status":"Unreleased for Global players, lol.",
       "Preview":"066"
    },
    {
@@ -1135,7 +1135,24 @@
       "MainSkillActive":"Sets a trap that deals 420% (Max 840%) damage and knocks back the triggering enemies.",
       "MainSkillPassive":false,
       "CD":40,
-      "Status":"Unreleased",
+      "Status":"Unreleased for Global players, lol.",
       "Preview":"067"
+   },
+   {
+      "Name":"Ingrid",
+      "Number":68,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Limited Gacha",
+      "Unawakened":"068_0",
+      "Awakened":"068_1",
+      "SubSkillName":"Blooming Dark Flame",
+      "SubSkill":"Increases Particle charge from attacks by 110% (Max 220%); increases damage dealt with weapon skills by 20% (Max 40%); decreases Ultimate damage by 50%.",
+      "MainSkillName":"Dark Flame Sword",
+      "MainSkillActive":"Deals 400% (Max 800%) damage to all enemies and 80% burn damage for 20 seconds.",
+      "MainSkillPassive": "Normal attacks have a 10% chance of inflicting hellfire to the target for 10 seconds.",
+      "CD":64,
+      "Status":"Released",
+      "Preview":"068"
    }
 ]
