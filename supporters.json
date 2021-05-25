@@ -1168,7 +1168,7 @@
       "MainSkillName":"Visage Art: Binding",
       "MainSkillActive":"Increases damage dealt to all enemies by 40% (Max 80%) for five seconds when Binding is activated.",
       "MainSkillPassive": false,
-      "CD":64,
+      "CD":30,
       "Status":"Released",
       "Preview":"076"
    },
@@ -1180,12 +1180,12 @@
       "Source":"Limited Gacha",
       "Unawakened":"077_0",
       "Awakened":"077_1",
-      "SubSkillName":"Blooming Dark Flame",
-      "SubSkill":"Increases Particle charge from attacks by 110% (Max 220%); increases damage dealt with weapon skills by 20% (Max 40%); decreases Ultimate damage by 50%.",
-      "MainSkillName":"Dark Flame Sword",
-      "MainSkillActive":"Deals 400% (Max 800%) damage to all enemies and 80% burn damage for 20 seconds.",
-      "MainSkillPassive": "Normal attacks have a 10% chance of inflicting hellfire to the target for 10 seconds.",
-      "CD":64,
+      "SubSkillName":"Igawa Martial Arts: Oni Style",
+      "SubSkill":"Reduces damage taken by a Demon-type character by 15% (Max 30%).",
+      "MainSkillName":"Shade Art: Nether Fall",
+      "MainSkillActive":"Increases your speed by 10% (Max 20%) for 10 seconds, and reduces enemy's speed by 15% (Max 30%) for 10 seconds.",
+      "MainSkillPassive": false,
+      "CD":41,
       "Status":"Released",
       "Preview":"077"
    }
