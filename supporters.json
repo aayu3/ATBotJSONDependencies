@@ -1154,5 +1154,39 @@
       "CD":64,
       "Status":"Released",
       "Preview":"068"
+   },
+   {
+      "Name":"Kannazuki Sora",
+      "Number":76,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Limited Gacha",
+      "Unawakened":"076_0",
+      "Awakened":"076_1",
+      "SubSkillName":"Visage Art: Retribution",
+      "SubSkill":"Deals 120% (Max 240%) damage to a random enemy after using character skill.",
+      "MainSkillName":"Visage Art: Binding",
+      "MainSkillActive":"Increases damage dealt to all enemies by 40% (Max 80%) for five seconds when Binding is activated.",
+      "MainSkillPassive": false,
+      "CD":64,
+      "Status":"Released",
+      "Preview":"076"
+   },
+   {
+      "Name":"Igawa Sakuya",
+      "Number":77,
+      "Type":"Suppress",
+      "Rarity":"UR",
+      "Source":"Limited Gacha",
+      "Unawakened":"077_0",
+      "Awakened":"077_1",
+      "SubSkillName":"Blooming Dark Flame",
+      "SubSkill":"Increases Particle charge from attacks by 110% (Max 220%); increases damage dealt with weapon skills by 20% (Max 40%); decreases Ultimate damage by 50%.",
+      "MainSkillName":"Dark Flame Sword",
+      "MainSkillActive":"Deals 400% (Max 800%) damage to all enemies and 80% burn damage for 20 seconds.",
+      "MainSkillPassive": "Normal attacks have a 10% chance of inflicting hellfire to the target for 10 seconds.",
+      "CD":64,
+      "Status":"Released",
+      "Preview":"077"
    }
 ]
