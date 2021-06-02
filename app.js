@@ -41,6 +41,7 @@ function SupporterJSONtoHTML(supporter) {
     templateHTML("#ogTitle").attr("content",supporter.Name);
     templateHTML("#ogDescription").attr("content","Wiki page for " + supporter.Name + ".");
     templateHTML("#ogImage").attr("content","https://aayu3.github.io/ATBotJSONDependencies/supporter_images/" + supporter.Preview + ".png");
+    templateHTML("#ogImage").attr("content","https://aayu3.github.io/ATBotJSONDependencies/supporter_images/" + supporter.Preview + ".png");
     templateHTML("#faviconInfo").attr("href", "../supporter_images/" + supporter.Preview + ".png");
     // Set type
     if (supporter.Type === "Protect") {
@@ -65,7 +66,12 @@ function SupporterJSONtoHTML(supporter) {
     templateHTML("#UnawakenedButton").attr("onclick","document.getElementById('SupporterImage').src='../supporter_images/" + supporter.Unawakened + ".png'");
     templateHTML("#AwakenedButton").attr("onclick","document.getElementById('SupporterImage').src='../supporter_images/" + supporter.Awakened + ".png'");
     templateHTML("#SupporterImage").attr("src","../supporter_images/" + supporter.Unawakened + ".png");
-
+    if (supporter.Rarity ==="R") {
+        
+    } else {
+        templateHTML("#IntimacyImage").attr("src","../intimacy_images/Supporter_" + supporter.Unawakened + ".png");
+    }
+    
     // Subskill Formatting
     if (supporter.SubSkillName) {
         templateHTML("#SubSkill").text("Sub Skill: ");
