@@ -142,7 +142,18 @@ a.discord-link:hover {
   border: 1px solid #ddd; /* Add a grey border */
 }
 
-#supporters {
+#weaponSearch {
+  background-image: url("/css/searchicon.png"); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  margin-bottom: 0.5rem;
+  padding: 12px 40px 12px 40px;
+  border: 1px solid #ddd; /* Add a grey border */
+}
+
+#weapons {
   /* Remove default list styling */
   list-style-type: none;
   padding: 0;
@@ -151,6 +162,17 @@ a.discord-link:hover {
   height: calc(100vh - 6rem);
 
   position: static;
+}
+
+#weapons li a {
+  border: 1px solid #444344;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #5b5b5b;
+  padding: 12px 40px 12px 40px;
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: #fff;
+  display: block; /* Make it into a block element to fill the whole list */
 }
 
 #supporters li a {
@@ -168,12 +190,27 @@ a.discord-link:hover {
   background-color: #2e2e2e;
 }
 
+#weapons li a:hover:not(.header) {
+  background-color: #2e2e2e;
+}
+
 #supporters::-webkit-scrollbar {
   display: none;
 }
 
+#weapons::-webkit-scrollbar {
+  display: none;
+}
+
+
 /* Hide scrollbar for IE, Edge and Firefox */
 #supporters {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#weapons {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }

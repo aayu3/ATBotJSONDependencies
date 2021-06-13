@@ -1201,7 +1201,7 @@
       "SubSkill":"Increases damage dealt to all enemies by 30%; reduces damage taken by 3% (Max 6%) and damage dealt by 5% per each enemy nearby",
       "MainSkillName":"Water Art: Phantom Summoning",
       "MainSkillActive":"Summons an illusion that deals 70% (Max 140%) of melee attack damage for 12 seconds",
-      "MainSkillPassive": "Reduces the remaining cooldown time of one of the character's skills by 10% upon being attacked. Applies once ever 15 seconds",
+      "MainSkillPassive": "Reduces the remaining cooldown time of one of the character's skills by 10% (Max 20%) upon being attacked. Applies once ever 15 seconds",
       "CD":49,
       "Status":"Released",
       "Preview":"078"

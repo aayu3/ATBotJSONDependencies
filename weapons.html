@@ -1,0 +1,476 @@
+<!DOCTYPE html><html><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATBotDependencies Wiki Weapons</title>
+    <meta name="title" content="Action Taimanin Discord Weapon Wiki">
+    <meta name="description" content="List of all the weapons currently in the Action Taimanin Game.">
+    <meta name="image" content="https://aayu3.github.io/ATBotJSONDependencies/assets/images/atpreview.png">
+    <meta property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/assets/images/atpreview.png">
+    <meta property="og:title" content="Action Taimanin Discord Supporter List">
+    <meta property="og:description" content="List of all the weapons currently in the Action Taimanin Game.">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <ul>
+      <img src="./assets/images/at_animated_logo.gif" alt="Action_Taimanin_Discord" style="width: 240px; height: auto">
+
+      <li><a href="index.html">Home</a></li>
+      <li><a href="supporters.html">Supporters</a></li>
+      <li><a class="active" href="weapons.html">Weapons</a></li>
+      <li><a href="beginner_guide.html">Beginner's Guide</a></li>
+      <li><a href="reroll_guide.html">Reroll Guide</a></li>
+      <li><a href="supporters.json" download="SupporterJSON">Supporter JSON</a></li>
+
+      <div class="discord-navigator">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 d-flex justify-content-center">
+              <img src="./assets/images/at_discord_invite_qr_code.png" alt="Action Taimanin Discord QR Code" class="discord-qr-code">
+            </div>
+
+            <div class="col-6 px-0 d-flex align-items-center">
+              <div class="discord-link-bg d-flex align-items-center">
+                <a href="https://discord.gg/GTcDmfzyJx" target="_blank" class="discord-link">
+                  <div>
+                    <span style="font-size: 16px">🡆</span>
+                    <span style="font-size: 16px">Action</span>
+                  </div>
+                  <div style="font-size: 16px">Taimanin</div>
+                  <div style="font-size: 18px; font-weight: 600">Discord</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ul>
+
+    <div id="supporterDiv" class="main-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <input type="text" id="weaponSearch" onkeyup="searchWeapons()" placeholder="Search for weapons..">
+            <h2><u>Filter</u></h2>
+            <h3>Rarity:</h3>
+            <input type="radio" id="urButton" name="weaponRarity" value="ur">
+            <label for="urButton"><img src="wiki_icons/ur.png" width="65%"></label>
+            <input type="radio" id="srButton" name="weaponRarity" value="sr">
+            <label for="srButton"><img src="wiki_icons/sr.png" width="65%"></label>
+            <input type="radio" id="rareButton" name="weaponRarity" value="rare">
+            <label for="rareButton"><img src="wiki_icons/rare.png" width="115%"></label>
+            <h3>Source:</h3>
+            <input type="radio" id="standardGachaButton" name="weaponSource" value="standard">
+            <label for="standardGachaButton">Standard Gacha</label>
+            <input type="radio" id="limitedGachaButton" name="weaponSource" value="limited">
+            <label for="limitedGachaButton">Limited Gacha</label>
+            <input type="radio" id="eventButton" name="weaponSource" value="event">
+            <label for="eventButton">Event</label>
+            <br><button onclick="filter()">Filter</button>
+            <button onclick="clearFilter()">Clear</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <ul id="weapons" style="background-color: #3d3d3d"><li><a target="_blank" href="weapons_html/0001.html"><img src="weapon_images/Weapon_Asagi_1.png" width="5%" alt="Bamboo Sword">Bamboo Sword</a></li>
+<li><a target="_blank" href="weapons_html/0002.html"><img src="weapon_images/Weapon_Asagi_2.png" width="5%" alt="Wooden Sword">Wooden Sword</a></li>
+<li><a target="_blank" href="weapons_html/0003.html"><img src="weapon_images/Weapon_Asagi_3.png" width="5%" alt="Ninja Sword">Ninja Sword</a></li>
+<li><a target="_blank" href="weapons_html/0004.html"><img src="weapon_images/Weapon_Asagi_4.png" width="5%" alt="Assassin's Sword">Assassin's Sword</a></li>
+<li><a target="_blank" href="weapons_html/0005.html"><img src="weapon_images/Weapon_Asagi_5.png" width="5%" alt="Magnetic Sword">Magnetic Sword</a></li>
+<li><a target="_blank" href="weapons_html/0006.html"><img src="weapon_images/Weapon_Asagi_6.png" width="5%" alt="Tsumigiri the Cursed">Tsumigiri the Cursed</a></li>
+<li><a target="_blank" href="weapons_html/0007.html"><img src="weapon_images/Weapon_Asagi_7.png" width="5%" alt="The White Yasha">The White Yasha</a></li>
+<li><a target="_blank" href="weapons_html/0008.html"><img src="weapon_images/Weapon_Asagi_8.png" width="5%" alt="Onigirimaru">Onigirimaru</a></li>
+<li><a target="_blank" href="weapons_html/0009.html"><img src="weapon_images/Weapon_Asagi_9.png" width="5%" alt="Ray">Ray</a></li>
+<li><a target="_blank" href="weapons_html/0010.html"><img src="weapon_images/Weapon_Asagi_10.png" width="5%" alt="Senketsu">Senketsu</a></li>
+<li><a target="_blank" href="weapons_html/0011.html"><img src="weapon_images/Weapon_Asagi_11.png" width="5%" alt="Kahahirako">Kahahirako</a></li>
+<li><a target="_blank" href="weapons_html/0012.html"><img src="weapon_images/Weapon_Asagi_12.png" width="5%" alt="Sakurasaku">Sakurasaku</a></li>
+<li><a target="_blank" href="weapons_html/0013.html"><img src="weapon_images/Weapon_Asagi_13.png" width="5%" alt="Yomotsu-Ikusa">Yomotsu-Ikusa</a></li>
+<li><a target="_blank" href="weapons_html/0014.html"><img src="weapon_images/Weapon_Asagi_14.png" width="5%" alt="Naraku">Naraku</a></li>
+<li><a target="_blank" href="weapons_html/0015.html"><img src="weapon_images/Weapon_Asagi_15.png" width="5%" alt="Manasvin">Manasvin</a></li>
+<li><a target="_blank" href="weapons_html/0016.html"><img src="weapon_images/Weapon_Asagi_16.png" width="5%" alt="Ninja Sword Akki">Ninja Sword Akki</a></li>
+<li><a target="_blank" href="weapons_html/0017.html"><img src="weapon_images/Weapon_Asagi_17.png" width="5%" alt="Ninja Greatsword Ouren">Ninja Greatsword Ouren</a></li>
+<li><a target="_blank" href="weapons_html/0018.html"><img src="weapon_images/Weapon_Asagi_18.png" width="5%" alt="Crimson Karma Sword">Crimson Karma Sword</a></li>
+<li><a target="_blank" href="weapons_html/0019.html"><img src="weapon_images/Weapon_Asagi_19.png" width="5%" alt="Viridian Karma Sword">Viridian Karma Sword</a></li>
+<li><a target="_blank" href="weapons_html/0020.html"><img src="weapon_images/Weapon_Asagi_20.png" width="5%" alt="Amber Karma Sword">Amber Karma Sword</a></li>
+<li><a target="_blank" href="weapons_html/0021.html"><img src="weapon_images/Weapon_Asagi_21.png" width="5%" alt="Vain Diabolic">Vain Diabolic</a></li>
+<li><a target="_blank" href="weapons_html/0022.html"><img src="weapon_images/Weapon_Asagi_22.png" width="5%" alt="(Not) Fishing Pole">(Not) Fishing Pole</a></li>
+<li><a target="_blank" href="weapons_html/0023.html"><img src="weapon_images/Weapon_Asagi_23.png" width="5%" alt="Yamikuimaru">Yamikuimaru</a></li>
+<li><a target="_blank" href="weapons_html/0024.html"><img src="weapon_images/Weapon_Sakura_1.png" width="5%" alt="Bamboo Sword (Dual)">Bamboo Sword (Dual)</a></li>
+<li><a target="_blank" href="weapons_html/0025.html"><img src="weapon_images/Weapon_Sakura_2.png" width="5%" alt="Wooden Sword (Dual)">Wooden Sword (Dual)</a></li>
+<li><a target="_blank" href="weapons_html/0026.html"><img src="weapon_images/Weapon_Sakura_3.png" width="5%" alt="Ninja Dagger">Ninja Dagger</a></li>
+<li><a target="_blank" href="weapons_html/0027.html"><img src="weapon_images/Weapon_Sakura_4.png" width="5%" alt="Survival Knife">Survival Knife</a></li>
+<li><a target="_blank" href="weapons_html/0028.html"><img src="weapon_images/Weapon_Sakura_5.png" width="5%" alt="Skeleton Blade">Skeleton Blade</a></li>
+<li><a target="_blank" href="weapons_html/0029.html"><img src="weapon_images/Weapon_Sakura_6.png" width="5%" alt="Emerald Azoth">Emerald Azoth</a></li>
+<li><a target="_blank" href="weapons_html/0030.html"><img src="weapon_images/Weapon_Sakura_7.png" width="5%" alt="Guardian's Shiv">Guardian's Shiv</a></li>
+<li><a target="_blank" href="weapons_html/0031.html"><img src="weapon_images/Weapon_Sakura_8.png" width="5%" alt="One-winged Ageha">One-winged Ageha</a></li>
+<li><a target="_blank" href="weapons_html/0032.html"><img src="weapon_images/Weapon_Sakura_9.png" width="5%" alt="Lionheart">Lionheart</a></li>
+<li><a target="_blank" href="weapons_html/0033.html"><img src="weapon_images/Weapon_Sakura_10.png" width="5%" alt="Bloody Cross">Bloody Cross</a></li>
+<li><a target="_blank" href="weapons_html/0034.html"><img src="weapon_images/Weapon_Sakura_11.png" width="5%" alt="Ageha, the Butterfly Blade">Ageha, the Butterfly Blade</a></li>
+<li><a target="_blank" href="weapons_html/0035.html"><img src="weapon_images/Weapon_Sakura_12.png" width="5%" alt="Kaguramai">Kaguramai</a></li>
+<li><a target="_blank" href="weapons_html/0036.html"><img src="weapon_images/Weapon_Sakura_13.png" width="5%" alt="Yamata-no-Orochi">Yamata-no-Orochi</a></li>
+<li><a target="_blank" href="weapons_html/0037.html"><img src="weapon_images/Weapon_Sakura_14.png" width="5%" alt="Phantom Knife">Phantom Knife</a></li>
+<li><a target="_blank" href="weapons_html/0038.html"><img src="weapon_images/Weapon_Sakura_15.png" width="5%" alt="Sagara">Sagara</a></li>
+<li><a target="_blank" href="weapons_html/0039.html"><img src="weapon_images/Weapon_Sakura_16.png" width="5%" alt="Ninja Dagger Sakuretsu">Ninja Dagger Sakuretsu</a></li>
+<li><a target="_blank" href="weapons_html/0040.html"><img src="weapon_images/Weapon_Sakura_17.png" width="5%" alt="Ninja Dagger Kibou">Ninja Dagger Kibou</a></li>
+<li><a target="_blank" href="weapons_html/0041.html"><img src="weapon_images/Weapon_Sakura_18.png" width="5%" alt="Crimson Karma Dagger">Crimson Karma Dagger</a></li>
+<li><a target="_blank" href="weapons_html/0042.html"><img src="weapon_images/Weapon_Sakura_19.png" width="5%" alt="Viridian Karma Dagger">Viridian Karma Dagger</a></li>
+<li><a target="_blank" href="weapons_html/0043.html"><img src="weapon_images/Weapon_Sakura_20.png" width="5%" alt="Amber Karma Dagger">Amber Karma Dagger</a></li>
+<li><a target="_blank" href="weapons_html/0044.html"><img src="weapon_images/Weapon_Sakura_21.png" width="5%" alt="Feral Sorrow">Feral Sorrow</a></li>
+<li><a target="_blank" href="weapons_html/0045.html"><img src="weapon_images/Weapon_Sakura_23.png" width="5%" alt="Garou-Kiba">Garou-Kiba</a></li>
+<li><a target="_blank" href="weapons_html/0046.html"><img src="weapon_images/Weapon_Yukikaze_1.png" width="5%" alt="Mini-Revolver">Mini-Revolver</a></li>
+<li><a target="_blank" href="weapons_html/0047.html"><img src="weapon_images/Weapon_Yukikaze_2.png" width="5%" alt="Hand Musket">Hand Musket</a></li>
+<li><a target="_blank" href="weapons_html/0048.html"><img src="weapon_images/Weapon_Yukikaze_3.png" width="5%" alt="Taima Shooter">Taima Shooter</a></li>
+<li><a target="_blank" href="weapons_html/0049.html"><img src="weapon_images/Weapon_Yukikaze_4.png" width="5%" alt="Revolver">Revolver</a></li>
+<li><a target="_blank" href="weapons_html/0050.html"><img src="weapon_images/Weapon_Yukikaze_5.png" width="5%" alt="Magnum Revolver">Magnum Revolver</a></li>
+<li><a target="_blank" href="weapons_html/0051.html"><img src="weapon_images/Weapon_Yukikaze_6.png" width="5%" alt="Twofold Hanabi">Twofold Hanabi</a></li>
+<li><a target="_blank" href="weapons_html/0052.html"><img src="weapon_images/Weapon_Yukikaze_7.png" width="5%" alt="Pulse Handgun">Pulse Handgun</a></li>
+<li><a target="_blank" href="weapons_html/0053.html"><img src="weapon_images/Weapon_Yukikaze_8.png" width="5%" alt="Flame Lord">Flame Lord</a></li>
+<li><a target="_blank" href="weapons_html/0054.html"><img src="weapon_images/Weapon_Yukikaze_9.png" width="5%" alt="White Crown">White Crown</a></li>
+<li><a target="_blank" href="weapons_html/0055.html"><img src="weapon_images/Weapon_Yukikaze_10.png" width="5%" alt="Bloody Chaser">Bloody Chaser</a></li>
+<li><a target="_blank" href="weapons_html/0056.html"><img src="weapon_images/Weapon_Yukikaze_11.png" width="5%" alt="Butterfly Cannon">Butterfly Cannon</a></li>
+<li><a target="_blank" href="weapons_html/0057.html"><img src="weapon_images/Weapon_Yukikaze_12.png" width="5%" alt="Ouka">Ouka</a></li>
+<li><a target="_blank" href="weapons_html/0058.html"><img src="weapon_images/Weapon_Yukikaze_13.png" width="5%" alt="Yatagarasu">Yatagarasu</a></li>
+<li><a target="_blank" href="weapons_html/0059.html"><img src="weapon_images/Weapon_Yukikaze_14.png" width="5%" alt="Greek Fire">Greek Fire</a></li>
+<li><a target="_blank" href="weapons_html/0060.html"><img src="weapon_images/Weapon_Yukikaze_15.png" width="5%" alt="Utpalaka">Utpalaka</a></li>
+<li><a target="_blank" href="weapons_html/0061.html"><img src="weapon_images/Weapon_Yukikaze_16.png" width="5%" alt="Twin Shocker">Twin Shocker</a></li>
+<li><a target="_blank" href="weapons_html/0062.html"><img src="weapon_images/Weapon_Yukikaze_17.png" width="5%" alt="Crime and Punishment">Crime and Punishment</a></li>
+<li><a target="_blank" href="weapons_html/0063.html"><img src="weapon_images/Weapon_Yukikaze_18.png" width="5%" alt="Crimson Karma Pistol">Crimson Karma Pistol</a></li>
+<li><a target="_blank" href="weapons_html/0064.html"><img src="weapon_images/Weapon_Yukikaze_19.png" width="5%" alt="Viridian Karma Pistol">Viridian Karma Pistol</a></li>
+<li><a target="_blank" href="weapons_html/0065.html"><img src="weapon_images/Weapon_Yukikaze_20.png" width="5%" alt="Amber Karma Pistol">Amber Karma Pistol</a></li>
+<li><a target="_blank" href="weapons_html/0066.html"><img src="weapon_images/Weapon_Yukikaze_21.png" width="5%" alt="Gigantic Wrath">Gigantic Wrath</a></li>
+<li><a target="_blank" href="weapons_html/0067.html"><img src="weapon_images/Weapon_Yukikaze_22.png" width="5%" alt="(Not) Puffer Fish">(Not) Puffer Fish</a></li>
+<li><a target="_blank" href="weapons_html/0068.html"><img src="weapon_images/Weapon_Yukikaze_23.png" width="5%" alt="Onibimure">Onibimure</a></li>
+<li><a target="_blank" href="weapons_html/0069.html"><img src="weapon_images/Weapon_Rinko_2.png" width="5%" alt="Wooden Sword (Large)">Wooden Sword (Large)</a></li>
+<li><a target="_blank" href="weapons_html/0070.html"><img src="weapon_images/Weapon_Rinko_3.png" width="5%" alt="Ninja Longsword">Ninja Longsword</a></li>
+<li><a target="_blank" href="weapons_html/0071.html"><img src="weapon_images/Weapon_Rinko_4.png" width="5%" alt="Battle-Scarred">Battle-Scarred</a></li>
+<li><a target="_blank" href="weapons_html/0072.html"><img src="weapon_images/Weapon_Rinko_5.png" width="5%" alt="Inabikari">Inabikari</a></li>
+<li><a target="_blank" href="weapons_html/0073.html"><img src="weapon_images/Weapon_Rinko_9.png" width="5%" alt="Ley-Line">Ley-Line</a></li>
+<li><a target="_blank" href="weapons_html/0074.html"><img src="weapon_images/Weapon_Rinko_10.png" width="5%" alt="Sol Invictus">Sol Invictus</a></li>
+<li><a target="_blank" href="weapons_html/0075.html"><img src="weapon_images/Weapon_Rinko_11.png" width="5%" alt="Yumemidori">Yumemidori</a></li>
+<li><a target="_blank" href="weapons_html/0076.html"><img src="weapon_images/Weapon_Rinko_12.png" width="5%" alt="Sakurabira">Sakurabira</a></li>
+<li><a target="_blank" href="weapons_html/0077.html"><img src="weapon_images/Weapon_Rinko_14.png" width="5%" alt="Kirin">Kirin</a></li>
+<li><a target="_blank" href="weapons_html/0078.html"><img src="weapon_images/Weapon_Rinko_15.png" width="5%" alt="Ananta">Ananta</a></li>
+<li><a target="_blank" href="weapons_html/0079.html"><img src="weapon_images/Weapon_Rinko_16.png" width="5%" alt="Rinkou">Rinkou</a></li>
+<li><a target="_blank" href="weapons_html/0080.html"><img src="weapon_images/Weapon_Rinko_17.png" width="5%" alt="Soushuu">Soushuu</a></li>
+<li><a target="_blank" href="weapons_html/0081.html"><img src="weapon_images/Weapon_Rinko_18.png" width="5%" alt="Crimson Karma Blade">Crimson Karma Blade</a></li>
+<li><a target="_blank" href="weapons_html/0082.html"><img src="weapon_images/Weapon_Rinko_19.png" width="5%" alt="Viridian Karma Blade">Viridian Karma Blade</a></li>
+<li><a target="_blank" href="weapons_html/0083.html"><img src="weapon_images/Weapon_Rinko_20.png" width="5%" alt="Amber Karma Blade">Amber Karma Blade</a></li>
+<li><a target="_blank" href="weapons_html/0084.html"><img src="weapon_images/Weapon_Rinko_21.png" width="5%" alt="Apathetic Talon">Apathetic Talon</a></li>
+<li><a target="_blank" href="weapons_html/0085.html"><img src="weapon_images/Weapon_Rinko_22.png" width="5%" alt="(Not) Mackerel">(Not) Mackerel</a></li>
+<li><a target="_blank" href="weapons_html/0086.html"><img src="weapon_images/Weapon_Rinko_23.png" width="5%" alt="Yomigumo">Yomigumo</a></li>
+<li><a target="_blank" href="weapons_html/0087.html"><img src="weapon_images/Weapon_Murasaki_2.png" width="5%" alt="Training Axe">Training Axe</a></li>
+<li><a target="_blank" href="weapons_html/0088.html"><img src="weapon_images/Weapon_Murasaki_3.png" width="5%" alt="Ninja Axe">Ninja Axe</a></li>
+<li><a target="_blank" href="weapons_html/0089.html"><img src="weapon_images/Weapon_Murasaki_4.png" width="5%" alt="Combat Axe">Combat Axe</a></li>
+<li><a target="_blank" href="weapons_html/0090.html"><img src="weapon_images/Weapon_Murasaki_5.png" width="5%" alt="Plasma Edge">Plasma Edge</a></li>
+<li><a target="_blank" href="weapons_html/0091.html"><img src="weapon_images/Weapon_Murasaki_9.png" width="5%" alt="Furnace Cleaver">Furnace Cleaver</a></li>
+<li><a target="_blank" href="weapons_html/0092.html"><img src="weapon_images/Weapon_Murasaki_10.png" width="5%" alt="Killing Spree">Killing Spree</a></li>
+<li><a target="_blank" href="weapons_html/0093.html"><img src="weapon_images/Weapon_Murasaki_12.png" width="5%" alt="Chiharu">Chiharu</a></li>
+<li><a target="_blank" href="weapons_html/0094.html"><img src="weapon_images/Weapon_Murasaki_14.png" width="5%" alt="Hawiya">Hawiya</a></li>
+<li><a target="_blank" href="weapons_html/0095.html"><img src="weapon_images/Weapon_Murasaki_15.png" width="5%" alt="Balavan">Balavan</a></li>
+<li><a target="_blank" href="weapons_html/0096.html"><img src="weapon_images/Weapon_Murasaki_16.png" width="5%" alt="P.W. Liberator">P.W. Liberator</a></li>
+<li><a target="_blank" href="weapons_html/0097.html"><img src="weapon_images/Weapon_Murasaki_17.png" width="5%" alt="A.D.W. Annihilator">A.D.W. Annihilator</a></li>
+<li><a target="_blank" href="weapons_html/0098.html"><img src="weapon_images/Weapon_Murasaki_18.png" width="5%" alt="Crimson Karma Axe">Crimson Karma Axe</a></li>
+<li><a target="_blank" href="weapons_html/0099.html"><img src="weapon_images/Weapon_Murasaki_19.png" width="5%" alt="Viridian Karma Axe">Viridian Karma Axe</a></li>
+<li><a target="_blank" href="weapons_html/0100.html"><img src="weapon_images/Weapon_Murasaki_20.png" width="5%" alt="Amber Karma Axe">Amber Karma Axe</a></li>
+<li><a target="_blank" href="weapons_html/0101.html"><img src="weapon_images/Weapon_Murasaki_21.png" width="5%" alt="Spinal Malicious">Spinal Malicious</a></li>
+<li><a target="_blank" href="weapons_html/0102.html"><img src="weapon_images/Weapon_Murasaki_23.png" width="5%" alt="Messatsu-Guruma">Messatsu-Guruma</a></li>
+<li><a target="_blank" href="weapons_html/0103.html"><img src="weapon_images/Weapon_Jinglei_2.png" width="5%" alt="Prototype Power Fist">Prototype Power Fist</a></li>
+<li><a target="_blank" href="weapons_html/0104.html"><img src="weapon_images/Weapon_Jinglei_3.png" width="5%" alt="Ninja Gauntlet">Ninja Gauntlet</a></li>
+<li><a target="_blank" href="weapons_html/0105.html"><img src="weapon_images/Weapon_Jinglei_4.png" width="5%" alt="Demolisher Fist">Demolisher Fist</a></li>
+<li><a target="_blank" href="weapons_html/0106.html"><img src="weapon_images/Weapon_Jinglei_5.png" width="5%" alt="Companion Hand">Companion Hand</a></li>
+<li><a target="_blank" href="weapons_html/0107.html"><img src="weapon_images/Weapon_Jinglei_9.png" width="5%" alt="Mighty Knuckle">Mighty Knuckle</a></li>
+<li><a target="_blank" href="weapons_html/0108.html"><img src="weapon_images/Weapon_Jinglei_10.png" width="5%" alt="Esquire Knuckle">Esquire Knuckle</a></li>
+<li><a target="_blank" href="weapons_html/0109.html"><img src="weapon_images/Weapon_Jinglei_12.png" width="5%" alt="Leporine Device">Leporine Device</a></li>
+<li><a target="_blank" href="weapons_html/0110.html"><img src="weapon_images/Weapon_Jinglei_14.png" width="5%" alt="Unidentified Knuckle " x""="">Unidentified Knuckle "X"</a></li>
+<li><a target="_blank" href="weapons_html/0111.html"><img src="weapon_images/Weapon_Jinglei_15.png" width="5%" alt="Upananda">Upananda</a></li>
+<li><a target="_blank" href="weapons_html/0112.html"><img src="weapon_images/Weapon_Jinglei_16.png" width="5%" alt="Draconic Edge Gauntlet">Draconic Edge Gauntlet</a></li>
+<li><a target="_blank" href="weapons_html/0113.html"><img src="weapon_images/Weapon_Jinglei_17.png" width="5%" alt="Draconic Fang Gauntlet">Draconic Fang Gauntlet</a></li>
+<li><a target="_blank" href="weapons_html/0114.html"><img src="weapon_images/Weapon_Jinglei_18.png" width="5%" alt="Crimson Karma Knuckle">Crimson Karma Knuckle</a></li>
+<li><a target="_blank" href="weapons_html/0115.html"><img src="weapon_images/Weapon_Jinglei_19.png" width="5%" alt="Viridian Karma Knuckle">Viridian Karma Knuckle</a></li>
+<li><a target="_blank" href="weapons_html/0116.html"><img src="weapon_images/Weapon_Jinglei_20.png" width="5%" alt="Amber Karma Knuckle">Amber Karma Knuckle</a></li>
+<li><a target="_blank" href="weapons_html/0117.html"><img src="weapon_images/Weapon_Jinglei_21.png" width="5%" alt="Voracious Jaw">Voracious Jaw</a></li>
+<li><a target="_blank" href="weapons_html/0118.html"><img src="weapon_images/Weapon_Jinglei_22.png" width="5%" alt="(Not) Crab Pincer">(Not) Crab Pincer</a></li>
+<li><a target="_blank" href="weapons_html/0119.html"><img src="weapon_images/Weapon_Jinglei_23.png" width="5%" alt="Kishin-Ken">Kishin-Ken</a></li>
+<li><a target="_blank" href="weapons_html/0120.html"><img src="weapon_images/Weapon_Shiranui_2.png" width="5%" alt="Mock Naginata">Mock Naginata</a></li>
+<li><a target="_blank" href="weapons_html/0121.html"><img src="weapon_images/Weapon_Shiranui_3.png" width="5%" alt="Ninja Naginata">Ninja Naginata</a></li>
+<li><a target="_blank" href="weapons_html/0122.html"><img src="weapon_images/Weapon_Shiranui_4.png" width="5%" alt="Uranami">Uranami</a></li>
+<li><a target="_blank" href="weapons_html/0123.html"><img src="weapon_images/Weapon_Shiranui_5.png" width="5%" alt="Proto-Plasma Weapon">Proto-Plasma Weapon</a></li>
+<li><a target="_blank" href="weapons_html/0124.html"><img src="weapon_images/Weapon_Shiranui_9.png" width="5%" alt="Vajra Scepter">Vajra Scepter</a></li>
+<li><a target="_blank" href="weapons_html/0125.html"><img src="weapon_images/Weapon_Shiranui_10.png" width="5%" alt="Lone Valiant">Lone Valiant</a></li>
+<li><a target="_blank" href="weapons_html/0126.html"><img src="weapon_images/Weapon_Shiranui_12.png" width="5%" alt="Sakura-fubuki">Sakura-fubuki</a></li>
+<li><a target="_blank" href="weapons_html/0127.html"><img src="weapon_images/Weapon_Shiranui_14.png" width="5%" alt="Cocytus">Cocytus</a></li>
+<li><a target="_blank" href="weapons_html/0128.html"><img src="weapon_images/Weapon_Shiranui_15.png" width="5%" alt="undefined">undefined</a></li>
+<li><a target="_blank" href="weapons_html/0129.html"><img src="weapon_images/Weapon_Shiranui_16.png" width="5%" alt="Atoner's Prayer">Atoner's Prayer</a></li>
+<li><a target="_blank" href="weapons_html/0130.html"><img src="weapon_images/Weapon_Shiranui_17.png" width="5%" alt="Dawn of the Punisher">Dawn of the Punisher</a></li>
+<li><a target="_blank" href="weapons_html/0131.html"><img src="weapon_images/Weapon_Shiranui_18.png" width="5%" alt="Crimson Karma Naginata">Crimson Karma Naginata</a></li>
+<li><a target="_blank" href="weapons_html/0132.html"><img src="weapon_images/Weapon_Shiranui_19.png" width="5%" alt="Viridian Karma Naginata">Viridian Karma Naginata</a></li>
+<li><a target="_blank" href="weapons_html/0133.html"><img src="weapon_images/Weapon_Shiranui_20.png" width="5%" alt="Amber Karma Naginata">Amber Karma Naginata</a></li>
+<li><a target="_blank" href="weapons_html/0134.html"><img src="weapon_images/Weapon_Shiranui_21.png" width="5%" alt="Leviathan Horn">Leviathan Horn</a></li>
+<li><a target="_blank" href="weapons_html/0135.html"><img src="weapon_images/Weapon_Shiranui_22.png" width="5%" alt="(Not) Swordfish">(Not) Swordfish</a></li>
+<li><a target="_blank" href="weapons_html/0136.html"><img src="weapon_images/Weapon_Shiranui_23.png" width="5%" alt="Shikigiri">Shikigiri</a></li>
+<li><a target="_blank" href="weapons_html/0137.html"><img src="weapon_images/Weapon_Emily_2.png" width="5%" alt="Magi Prototype #1">Magi Prototype #1</a></li>
+<li><a target="_blank" href="weapons_html/0138.html"><img src="weapon_images/Weapon_Emily_3.png" width="5%" alt="Gold Hornet">Gold Hornet</a></li>
+<li><a target="_blank" href="weapons_html/0139.html"><img src="weapon_images/Weapon_Emily_4.png" width="5%" alt="White Mage">White Mage</a></li>
+<li><a target="_blank" href="weapons_html/0140.html"><img src="weapon_images/Weapon_Emily_5.png" width="5%" alt="Magi Mk-II">Magi Mk-II</a></li>
+<li><a target="_blank" href="weapons_html/0141.html"><img src="weapon_images/Weapon_Emily_9.png" width="5%" alt="Providence Eye">Providence Eye</a></li>
+<li><a target="_blank" href="weapons_html/0142.html"><img src="weapon_images/Weapon_Emily_10.png" width="5%" alt="U.F.S. Sovereign">U.F.S. Sovereign</a></li>
+<li><a target="_blank" href="weapons_html/0143.html"><img src="weapon_images/Weapon_Emily_12.png" width="5%" alt="Prunus Device">Prunus Device</a></li>
+<li><a target="_blank" href="weapons_html/0144.html"><img src="weapon_images/Weapon_Emily_14.png" width="5%" alt="Agnus Dei">Agnus Dei</a></li>
+<li><a target="_blank" href="weapons_html/0145.html"><img src="weapon_images/Weapon_Emily_15.png" width="5%" alt="undefined">undefined</a></li>
+<li><a target="_blank" href="weapons_html/0146.html"><img src="weapon_images/Weapon_Emily_18.png" width="5%" alt="Crimson Karma Weapon">Crimson Karma Weapon</a></li>
+<li><a target="_blank" href="weapons_html/0147.html"><img src="weapon_images/Weapon_Emily_19.png" width="5%" alt="Viridian Karma Weapon">Viridian Karma Weapon</a></li>
+<li><a target="_blank" href="weapons_html/0148.html"><img src="weapon_images/Weapon_Emily_20.png" width="5%" alt="Amber Karma Weapon">Amber Karma Weapon</a></li>
+<li><a target="_blank" href="weapons_html/0149.html"><img src="weapon_images/Weapon_Emily_21.png" width="5%" alt="Howling Orthros">Howling Orthros</a></li>
+<li><a target="_blank" href="weapons_html/0150.html"><img src="weapon_images/Weapon_Emily_23.png" width="5%" alt="Temari-Uta">Temari-Uta</a></li>
+<li><a target="_blank" href="weapons_html/0151.html"><img src="weapon_images/Weapon_Kurenai_2.png" width="5%" alt="Wooden Sword (Long/Short)">Wooden Sword (Long/Short)</a></li>
+<li><a target="_blank" href="weapons_html/0152.html"><img src="weapon_images/Weapon_Kurenai_3.png" width="5%" alt="Ninja Dagger (Long/Short)">Ninja Dagger (Long/Short)</a></li>
+<li><a target="_blank" href="weapons_html/0153.html"><img src="weapon_images/Weapon_Kurenai_4.png" width="5%" alt="Duelist's Blades">Duelist's Blades</a></li>
+<li><a target="_blank" href="weapons_html/0154.html"><img src="weapon_images/Weapon_Kurenai_5.png" width="5%" alt="Experimental Photon Blade">Experimental Photon Blade</a></li>
+<li><a target="_blank" href="weapons_html/0155.html"><img src="weapon_images/Weapon_Kurenai_9.png" width="5%" alt="Split Moon Dorje">Split Moon Dorje</a></li>
+<li><a target="_blank" href="weapons_html/0156.html"><img src="weapon_images/Weapon_Kurenai_12.png" width="5%" alt="Tataribana">Tataribana</a></li>
+<li><a target="_blank" href="weapons_html/0157.html"><img src="weapon_images/Weapon_Kurenai_14.png" width="5%" alt="Coronet of Supremacy">Coronet of Supremacy</a></li>
+<li><a target="_blank" href="weapons_html/0158.html"><img src="weapon_images/Weapon_Kurenai_18.png" width="5%" alt="Crimson Karma Dagger (L/S)">Crimson Karma Dagger (L/S)</a></li>
+<li><a target="_blank" href="weapons_html/0159.html"><img src="weapon_images/Weapon_Kurenai_19.png" width="5%" alt="Viridian Karma Dagger (L/S)">Viridian Karma Dagger (L/S)</a></li>
+<li><a target="_blank" href="weapons_html/0160.html"><img src="weapon_images/Weapon_Kurenai_20.png" width="5%" alt="Amber Karma Dagger (L/S)">Amber Karma Dagger (L/S)</a></li>
+<li><a target="_blank" href="weapons_html/0161.html"><img src="weapon_images/Weapon_Kurenai_21.png" width="5%" alt="Demonic Edge">Demonic Edge</a></li>
+<li><a target="_blank" href="weapons_html/0162.html"><img src="weapon_images/Weapon_Kurenai_23.png" width="5%" alt="Magatsu-Gari">Magatsu-Gari</a></li>
+<li><a target="_blank" href="weapons_html/0163.html"><img src="weapon_images/Weapon_Kurenai_27.png" width="5%" alt="Pumpkin Sword">Pumpkin Sword</a></li>
+<li><a target="_blank" href="weapons_html/0164.html"><img src="weapon_images/Weapon_Oboro_2.png" width="5%" alt="Wooden Claw">Wooden Claw</a></li>
+<li><a target="_blank" href="weapons_html/0165.html"><img src="weapon_images/Weapon_Oboro_3.png" width="5%" alt="Ninja Claw">Ninja Claw</a></li>
+<li><a target="_blank" href="weapons_html/0166.html"><img src="weapon_images/Weapon_Oboro_4.png" width="5%" alt="Bladed Gauntlet">Bladed Gauntlet</a></li>
+<li><a target="_blank" href="weapons_html/0167.html"><img src="weapon_images/Weapon_Oboro_5.png" width="5%" alt="Companion Claw">Companion Claw</a></li>
+<li><a target="_blank" href="weapons_html/0168.html"><img src="weapon_images/Weapon_Oboro_9.png" width="5%" alt="Hand of Papiyas">Hand of Papiyas</a></li>
+<li><a target="_blank" href="weapons_html/0169.html"><img src="weapon_images/Weapon_Oboro_10.png" width="5%" alt="Picaresque">Picaresque</a></li>
+<li><a target="_blank" href="weapons_html/0170.html"><img src="weapon_images/Weapon_Oboro_12.png" width="5%" alt="Leporine Irregular">Leporine Irregular</a></li>
+<li><a target="_blank" href="weapons_html/0171.html"><img src="weapon_images/Weapon_Oboro_14.png" width="5%" alt="Unidentified Deviation " x-3""="">Unidentified Deviation "X-3"</a></li>
+<li><a target="_blank" href="weapons_html/0172.html"><img src="weapon_images/Weapon_Oboro_18.png" width="5%" alt="Crimson Karma Claw">Crimson Karma Claw</a></li>
+<li><a target="_blank" href="weapons_html/0173.html"><img src="weapon_images/Weapon_Oboro_19.png" width="5%" alt="Viridian Karma Claw">Viridian Karma Claw</a></li>
+<li><a target="_blank" href="weapons_html/0174.html"><img src="weapon_images/Weapon_Oboro_20.png" width="5%" alt="Amber Karma Claw">Amber Karma Claw</a></li>
+<li><a target="_blank" href="weapons_html/0175.html"><img src="weapon_images/Weapon_Oboro_23.png" width="5%" alt="Utsuro-Bara">Utsuro-Bara</a></li>
+<li><a target="_blank" href="weapons_html/0176.html"><img src="weapon_images/Weapon_Asuka_2.png" width="5%" alt="Prototype Arm">Prototype Arm</a></li>
+<li><a target="_blank" href="weapons_html/0177.html"><img src="weapon_images/Weapon_Asuka_3.png" width="5%" alt="Android Arm">Android Arm</a></li>
+<li><a target="_blank" href="weapons_html/0178.html"><img src="weapon_images/Weapon_Asuka_4.png" width="5%" alt="Prosthetic Shell">Prosthetic Shell</a></li>
+<li><a target="_blank" href="weapons_html/0179.html"><img src="weapon_images/Weapon_Asuka_5.png" width="5%" alt="S.W.A.T. Arms">S.W.A.T. Arms</a></li>
+<li><a target="_blank" href="weapons_html/0180.html"><img src="weapon_images/Weapon_Asuka_9.png" width="5%" alt="Cloud Wing Blade">Cloud Wing Blade</a></li>
+<li><a target="_blank" href="weapons_html/0181.html"><img src="weapon_images/Weapon_Asuka_10.png" width="5%" alt="U.F.S. Supremacy">U.F.S. Supremacy</a></li>
+<li><a target="_blank" href="weapons_html/0182.html"><img src="weapon_images/Weapon_Asuka_12.png" width="5%" alt="Prunus Arm">Prunus Arm</a></li>
+<li><a target="_blank" href="weapons_html/0183.html"><img src="weapon_images/Weapon_Asuka_14.png" width="5%" alt="Deathly Gehenna">Deathly Gehenna</a></li>
+<li><a target="_blank" href="weapons_html/0184.html"><img src="weapon_images/Weapon_Asuka_18.png" width="5%" alt="Crimson Arm">Crimson Arm</a></li>
+<li><a target="_blank" href="weapons_html/0185.html"><img src="weapon_images/Weapon_Asuka_19.png" width="5%" alt="Viridian Arm">Viridian Arm</a></li>
+<li><a target="_blank" href="weapons_html/0186.html"><img src="weapon_images/Weapon_Asuka_20.png" width="5%" alt="Amber Arm">Amber Arm</a></li>
+<li><a target="_blank" href="weapons_html/0187.html"><img src="weapon_images/Weapon_Asuka_23.png" width="5%" alt="Shishi-Rui">Shishi-Rui</a></li>
+<li><a target="_blank" href="weapons_html/0188.html"><img src="weapon_images/Weapon_Kirara_2.png" width="5%" alt="Wooden Sphere">Wooden Sphere</a></li>
+<li><a target="_blank" href="weapons_html/0189.html"><img src="weapon_images/Weapon_Kirara_3.png" width="5%" alt="Ninja Sphere">Ninja Sphere</a></li>
+<li><a target="_blank" href="weapons_html/0190.html"><img src="weapon_images/Weapon_Kirara_4.png" width="5%" alt="Armored Ninja Sphere">Armored Ninja Sphere</a></li>
+<li><a target="_blank" href="weapons_html/0191.html"><img src="weapon_images/Weapon_Kirara_5.png" width="5%" alt="Holosphere">Holosphere</a></li>
+<li><a target="_blank" href="weapons_html/0192.html"><img src="weapon_images/Weapon_Kirara_9.png" width="5%" alt="Yasha Sphere">Yasha Sphere</a></li>
+<li><a target="_blank" href="weapons_html/0193.html"><img src="weapon_images/Weapon_Kirara_10.png" width="5%" alt="Last Vanguard">Last Vanguard</a></li>
+<li><a target="_blank" href="weapons_html/0194.html"><img src="weapon_images/Weapon_Kirara_12.png" width="5%" alt="Nirvana Orb">Nirvana Orb</a></li>
+<li><a target="_blank" href="weapons_html/0195.html"><img src="weapon_images/Weapon_Kirara_14.png" width="5%" alt="Yomotsu-Hegui">Yomotsu-Hegui</a></li>
+<li><a target="_blank" href="weapons_html/0196.html"><img src="weapon_images/Weapon_Kirara_18.png" width="5%" alt="Crimson Karma Sphere">Crimson Karma Sphere</a></li>
+<li><a target="_blank" href="weapons_html/0197.html"><img src="weapon_images/Weapon_Kirara_19.png" width="5%" alt="Viridian Karma Sphere">Viridian Karma Sphere</a></li>
+<li><a target="_blank" href="weapons_html/0198.html"><img src="weapon_images/Weapon_Kirara_20.png" width="5%" alt="Brimstone Karma Sphere">Brimstone Karma Sphere</a></li>
+<li><a target="_blank" href="weapons_html/0199.html"><img src="weapon_images/Weapon_Kirara_23.png" width="5%" alt="Mugen-Sukuna">Mugen-Sukuna</a></li>
+<li><a target="_blank" href="weapons_html/0200.html"><img src="weapon_images/Weapon_Ingrid_2.png" width="5%" alt="Apprentice Sword">Apprentice Sword</a></li>
+<li><a target="_blank" href="weapons_html/0201.html"><img src="weapon_images/Weapon_Ingrid_3.png" width="5%" alt="Hell Knight Sword">Hell Knight Sword</a></li>
+<li><a target="_blank" href="weapons_html/0202.html"><img src="weapon_images/Weapon_Ingrid_4.png" width="5%" alt="Squire Edge">Squire Edge</a></li>
+<li><a target="_blank" href="weapons_html/0203.html"><img src="weapon_images/Weapon_Ingrid_5.png" width="5%" alt="Blue Light Sabre">Blue Light Sabre</a></li>
+<li><a target="_blank" href="weapons_html/0204.html"><img src="weapon_images/Weapon_Ingrid_9.png" width="5%" alt="Yasha-Giri">Yasha-Giri</a></li>
+<li><a target="_blank" href="weapons_html/0205.html"><img src="weapon_images/Weapon_Ingrid_10.png" width="5%" alt="Noble Savage">Noble Savage</a></li>
+<li><a target="_blank" href="weapons_html/0206.html"><img src="weapon_images/Weapon_Ingrid_12.png" width="5%" alt="Midare-Zakura">Midare-Zakura</a></li>
+<li><a target="_blank" href="weapons_html/0207.html"><img src="weapon_images/Weapon_Ingrid_14.png" width="5%" alt="Skeletal Tartaros">Skeletal Tartaros</a></li>
+<li><a target="_blank" href="weapons_html/0208.html"><img src="weapon_images/Weapon_Ingrid_18.png" width="5%" alt="Crimson Sin">Crimson Sin</a></li>
+<li><a target="_blank" href="weapons_html/0209.html"><img src="weapon_images/Weapon_Ingrid_19.png" width="5%" alt="Viridian Sin">Viridian Sin</a></li>
+<li><a target="_blank" href="weapons_html/0210.html"><img src="weapon_images/Weapon_Ingrid_20.png" width="5%" alt="Amber Sin">Amber Sin</a></li>
+<li><a target="_blank" href="weapons_html/0211.html"><img src="weapon_images/Weapon_Ingrid_23.png" width="5%" alt="Shigami-Bashira">Shigami-Bashira</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var filteredWeapons = [];
+      function searchWeapons() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("weaponSearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("weapons");
+        li = ul.getElementsByTagName("li");
+
+        // convert filteredweapons to a list of names
+        var filteredWeaponNames = [];
+        for (var i = 0; i < filteredWeapons.length; i++) {
+          filteredWeaponNames.push(filteredWeapons[i].Name);
+        }
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            if (filteredWeaponNames.includes(txtValue)) {
+              li[i].style.display = "";
+            }
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+
+      async function clearFilter() {
+        console.log("filter cleared");
+        filteredWeapons = [];
+        var weaponJSON = await getData("https://actiontaiman.in/weapons.json");
+        for (var i = 0; i < weaponJSON.length; i++) {
+            filteredWeapons.push(weaponJSON[i]);
+        }
+
+        // clear radio buttons
+        var inputs = document.getElementsByTagName('input');
+
+        for(var i = 0; i < inputs.length; i++) {
+            if(inputs[i].type.toLowerCase() == 'radio') {
+                inputs[i].checked = false;
+            }
+        }
+            
+
+        // convert filteredweapon to a list of names
+        var filteredWeaponNames = [];
+        for (var i = 0; i < filteredWeapons.length; i++) {
+          filteredWeaponNames.push(filteredWeapons[i].Name);
+        }
+        ul = document.getElementById("weapons");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          li[i].style.display = "";
+        }
+        
+      }
+
+      async function filter() {
+        console.log("filtering...")
+        // Clear array for new filter call
+        filteredWeapons = [];
+        var weaponJSON = await getData("https://actiontaiman.in/weapons.json");
+        for (var i = 0; i < weaponJSON.length; i++) {
+            filteredWeapons.push(weaponJSON[i]);
+        }
+    
+        filterRarity();
+        filterSource();
+        // convert filteredweapons to a list of names
+        var filteredWeaponNames = [];
+        for (var i = 0; i < filteredWeapons.length; i++) {
+          filteredWeaponNames.push(filteredWeapons[i].Name);
+        }
+        ul = document.getElementById("weapons");
+          li = ul.getElementsByTagName("li");
+          for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (filteredWeaponNames.includes(txtValue)) {
+              li[i].style.display = "";
+            } else {
+              li[i].style.display = "none";
+            }
+            
+          }
+
+      }
+      
+
+      async function filterRarity() {
+        const radioButtons = document.querySelectorAll('input[name="weaponRarity"]');
+        let selectedValue;
+        for (const rb of radioButtons) {
+          if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+          }
+        }
+        if (selectedValue) {
+          let newFilteredList = [];
+          for (var i = 0; i < filteredWeapons.length; i++) {
+            if (filteredWeapons[i].Rarity.toUpperCase() === selectedValue.toUpperCase()) {
+              newFilteredList.push(filteredWeapons[i]);
+            }
+          }
+          filteredWeapons = newFilteredList;
+        }
+      }
+
+      async function filterSource() {
+        const radioButtons = document.querySelectorAll('input[name="weaponSource"]');
+        let selectedValue;
+        for (const rb of radioButtons) {
+          if (rb.checked) {
+            selectedValue = rb.value;
+            break;
+          }
+        }
+        if (selectedValue) {
+          let newFilteredList = [];
+          for (var i = 0; i < filteredWeapons.length; i++) {
+            if (filteredWeapons[i].Source.toUpperCase().includes(selectedValue.toUpperCase())) {
+              newFilteredList.push(filteredWeapons[i]);
+            }
+          }
+          filteredWeapons = newFilteredList;
+        }
+      }
+
+      
+
+      async function getData(url) {
+        const response = await fetch(url);
+        return response.json();
+      }
+      /* This code does nothing RN
+
+
+      async function getSupporters() {
+        const response = await fetch("./supporters.json");
+
+        if (response.ok) {
+          const supporters = await response.json();
+          // console.log("supporters: ", supporters);
+
+          let supporterList = "";
+
+          supporters.forEach((sup, i) => {
+            const orderNumber = (i + 1).toString();
+            const lengthToAddZero = 4 - orderNumber.length;
+            const zero = "0";
+            const supNumber = zero.repeat(lengthToAddZero) + orderNumber;
+
+            supporterList += `
+              <li><a href="supporters_html/${supNumber}.html">${sup.Name}</a></li>
+            `;
+          });
+
+          resultElement = document.getElementById("supporter-list");
+
+          resultElement.innerHTML = supporterList;
+        } else {
+          console.error("HTTP-Error: " + response.status);
+        }
+      }
+      getSupporters();
+      */
+    </script>
+  
+
+</body></html>
