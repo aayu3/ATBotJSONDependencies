@@ -163,6 +163,16 @@ a.discord-link:hover {
 
   position: static;
 }
+#supporters {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: calc(100vh - 6rem);
+
+  position: static;
+}
 
 #weapons li a {
   border: 1px solid #444344;

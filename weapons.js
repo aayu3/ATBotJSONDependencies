@@ -56,24 +56,33 @@ function WeaponJSONtoHTML(weapon) {
     }
     templateHTML("#Source").append(weapon.Source);
     templateHTML("#Character").append(weapon.Character);
+    templateHTML("#MaxForge").append("<br> Attack: " + weapon.MaxForgeAttack + "<br> Crit: " + weapon.MaxForgeCrit);
+    templateHTML("#MaxSLVL").append("<br> Attack: " + weapon.MaxSLVLAttack + "<br> Crit: " + weapon.MaxSLVLCrit);
+    
     // Set Unawakened, Awakened, and starting Video
     templateHTML("#WeaponImage").attr("src","../weapon_images/" + weapon.Icon);
     
 
     // Skill Formatting
     templateHTML("#Skill").text("Skill: ");
-    templateHTML("#Skill").append("<u id = 'SkillName'>" + weapon.SkillName + "</u>");
-    templateHTML("#SkillName").text(weapon.SkillName);
-    if (weapon.SkillDescription) {
-        var formatDesc = weapon.SkillDescription;
-        formatDesc = formatDesc.split('[FFFF00FF]').join('<span style="color:#FFFF00FF";>');
-        formatDesc = formatDesc.split('[-]').join('</span>');
-        formatDesc = formatDesc.split('[6BEB00FF]').join('<span style="color:#6BEB00FF";>');
-        formatDesc = formatDesc.split('[FFA500FF]').join('<span style="color:#FFA500FF";>');
-        templateHTML("#SkillText").append(formatDesc);
+    if (weapon.SkillName) {
+        templateHTML("#Skill").append("<u id = 'SkillName'>" + weapon.SkillName + "</u>");
+        templateHTML("#SkillName").text(weapon.SkillName);
+        if (weapon.SkillDescription) {
+            var formatDesc = weapon.SkillDescription ;
+            formatDesc = formatDesc.split('[FFA500FF]Active[-]').join('<br>[FFA500FF]Active[-]');
+            formatDesc = formatDesc.split('[FFFF00FF]').join('<span style="color:#FFFF00FF";>');
+            formatDesc = formatDesc.split('[-]').join('</span>');
+            formatDesc = formatDesc.split('[6BEB00FF]').join('<span style="color:#6BEB00FF";>');
+            formatDesc = formatDesc.split('[FFA500FF]').join('<span style="color:#FFA500FF";>');
+            templateHTML("#SkillText").append(formatDesc);
+        } else {
+            templateHTML("#SkillText").text(weapon.SkillDescription);
+        }
     } else {
-        templateHTML("#SkillText").text(weapon.SkillDescription);
+        templateHTML("#Skill").append( "This weapon has no skill.");
     }
+    
     
     
 
