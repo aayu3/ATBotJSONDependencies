@@ -84,6 +84,7 @@ function WeaponJSONtoHTML(weapon) {
             formatDesc = formatDesc.split('[-]').join('</span>');
             formatDesc = formatDesc.split('[6BEB00FF]').join('<span style="color:#6BEB00FF";>');
             formatDesc = formatDesc.split('[FFA500FF]').join('<span style="color:#FFA500FF";>');
+            formatDesc = formatDesc.split('[FF5A00FF]').join('<span style="color:#FF5A00FF";>');
             templateHTML("#SkillText").append(formatDesc);
         } else {
             templateHTML("#SkillText").text(weapon.SkillDescription);
