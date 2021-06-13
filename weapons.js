@@ -53,6 +53,7 @@ function WeaponJSONtoHTML(weapon) {
         templateHTML("#Rarity").attr("src","../wiki_icons/ur.png");
     }
     templateHTML("#Source").append(weapon.Source);
+    templateHTML("#Character").append(weapon.Character);
     // Set Unawakened, Awakened, and starting Video
     templateHTML("#WeaponImage").attr("src","../weapon_images/" + weapon.Icon);
     
