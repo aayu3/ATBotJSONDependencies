@@ -45,7 +45,9 @@ function WeaponJSONtoHTML(weapon) {
     templateHTML("#faviconInfo").attr("href", "../weapon_images/" + weapon.Icon);
 
     // Set rarity
-    if (weapon.Rarity === "Rare") {
+    if (weapon.Rarity === "Normal") {
+        templateHTML("#Rarity").attr("src","../wiki_icons/normal.png");
+    } else if (weapon.Rarity === "Rare") {
         templateHTML("#Rarity").attr("src","../wiki_icons/rare.png");
     } else if (weapon.Rarity === "SR") {
         templateHTML("#Rarity").attr("src","../wiki_icons/sr.png");
