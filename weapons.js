@@ -70,7 +70,16 @@ function WeaponJSONtoHTML(weapon) {
         templateHTML("#SkillName").text(weapon.SkillName);
         if (weapon.SkillDescription) {
             var formatDesc = weapon.SkillDescription ;
-            formatDesc = formatDesc.split('[FFA500FF]Active[-]').join('<br>[FFA500FF]Active[-]');
+            if (weapon.Particle != -1) {
+                var value = weapon.Particle/100;
+
+                formatDesc = formatDesc.split('[FFA500FF]Active[-]').join('<br>' +  `<img
+                id="Particle"
+                src="../wiki_icons/particle.png"
+                style="height: 30px"
+                title="Particle"
+              />` + ' ✕ ' + value + '<br>[FFA500FF]Active[-]');
+            } 
             formatDesc = formatDesc.split('[FFFF00FF]').join('<span style="color:#FFFF00FF";>');
             formatDesc = formatDesc.split('[-]').join('</span>');
             formatDesc = formatDesc.split('[6BEB00FF]').join('<span style="color:#6BEB00FF";>');
