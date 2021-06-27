@@ -90,7 +90,7 @@ function SupporterJSONtoHTML(supporter) {
     if (supporter.MainSkillName) {
         templateHTML("#LeadSkill").text("Lead Skill: ");
         templateHTML("#LeadSkill").append("<u id = 'LeadSkillName'>" + supporter.MainSkillName +  "</u>");
-        templateHTML("#LeadSkill").text(supporter.MainSkillName);
+ 
         var formatDesc = supporter.MainSkillDescription;
         formatDesc = formatDesc.split('[FFFF00FF]').join('<span style="color:#FFFF00FF";>');
         formatDesc = formatDesc.split('[-]').join('</span>');
