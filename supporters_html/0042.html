@@ -2,14 +2,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta id="metaTitle" name="title" content="[Assault] Yatsu Murasaki">
-    <meta id="metaDescription" name="description" content="Wiki page for [Assault] Yatsu Murasaki.">
-    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/042.png">
-    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/042.png">
-    <meta id="ogTitle" property="og:title" content="[Assault] Yatsu Murasaki">
-    <meta id="ogDescription" property="og:description" content="Wiki page for [Assault] Yatsu Murasaki.">
+    <meta id="metaTitle" name="title" content="Kuonji R. Spica">
+    <meta id="metaDescription" name="description" content="Wiki page for Kuonji R. Spica.">
+    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_042.png">
+    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_042.png">
+    <meta id="ogTitle" property="og:title" content="Kuonji R. Spica">
+    <meta id="ogDescription" property="og:description" content="Wiki page for Kuonji R. Spica.">
     <meta property="og:type" content="website">
-    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/042.png">
+    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/Supporter_042.png">
     <title>ATBotJSON Dependencies</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 
@@ -25,6 +25,8 @@
 
       <li><a href="../index.html">Home</a></li>
       <li><a class="active" href="../supporters.html">Supporters</a></li>
+      <li><a href="../weapons.html">Weapons</a></li>
+      <li><a href="../characters.html">Character Guides</a></li>
       <li><a href="../beginner_guide.html">Beginner's Guide</a></li>
       <li><a href="../reroll_guide.html">Reroll Guide</a></li>
       <li><a href="../supporters.json" download="SupporterJSON">Supporter JSON</a></li>
@@ -57,7 +59,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mb-5">
-            <h2 id="Name" class="font-weight-bold">No. 42: [Assault] Yatsu Murasaki</h2>
+            <h2 id="Name" class="font-weight-bold">No. 42: Kuonji R. Spica</h2>
           </div>
         </div>
 
@@ -68,7 +70,7 @@
             <div class="row">
               <div class="col-12 mb-3 d-flex align-items-center">
                 <h3 class="font-weight-bold mr-3">Type:</h3>
-                <img id="Type" src="../wiki_icons/protect.png" class="mr-4" style="height: 34px" title="Type">
+                <img id="Type" src="../wiki_icons/suppress.png" class="mr-4" style="height: 34px" title="Type">
 
                 <h3 class="font-weight-bold mr-3">Rarity:</h3>
                 <img id="Rarity" src="../wiki_icons/ur.png" style="height: 34px" title="Rarity">
@@ -80,15 +82,9 @@
                 <h4 title="Source" ,="" id="Source" class="font-weight-bold">
                   Source:
                   <!-- Standard Gacha -->
-                Limited Gacha</h4>
+                Standard Gacha</h4>
               </div>
 
-              <div class="col-12 mb-3">
-                <h4 title="Status" ,="" id="Status" class="font-weight-bold">
-                  Status:
-                  <!-- Released -->
-                Released</h4>
-              </div>
             </div>
 
             <div class="row">
@@ -99,12 +95,15 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <h4 title="SubSkill" id="SubSkill" class="font-weight-bold">Sub Skill: <u id="SubSkillName">Secret Weapon M-01A</u></h4>
+                <h4 title="SubSkill" id="SubSkill" class="font-weight-bold">Sub Skill: <u id="SubSkillName">Samurai Shooter</u></h4>
               </div>
 
               <div class="col-12 mb-3">
                 <span style="font-size: 16px" title="SubSkillText">
-                  <i id="SubSkillText">Increases your Max. HP by 15% (Max 30%); restores 4% (Max 8%) of lost HP every 7 seconds (ends when HP drops below 15% of the maximum).</i>
+                  <i id="SubSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    Increases <span style="color:#FFFF00FF" ;="">critical rate</span> of melee attacks by <span style="color:#6BEB00FF" ;="">8 (Max 16)%</span>; Increases <span style="color:#FFFF00FF" ;="">critical damage</span> of ranged attacks by <span style="color:#6BEB00FF" ;="">16 (Max 32)%</span>.</i>
                 </span>
               </div>
             </div>
@@ -117,30 +116,19 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Lead Skill: <u id="LeadSkillName">Berserker Attack</u> CD: 60s</h4>
+                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Water Art: Bubbles</h4>
               </div>
 
               <div class="col-12 mb-3">
-                <h5 title="ActiveSkill" id="ActiveSkill" class="font-weight-bold mr-3 mb-3">
-                  <!-- Active Skill: -->
-                </h5>
-
-                <span style="font-size: 16px" title="ActiveSkillText">
-                  <i id="ActiveSkillText" class="mb-3">Creates a magnetic field that pulls enemies in and deals 32% (Max 64%) damage over time, bombards the area after 3 seconds to perform an additional area attack. Increases Particle gains from normal attacks for 4 (Max 8) seconds.</i>
+                <span style="font-size: 16px" title="MainSkillText">
+                  <i id="MainSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    Fires a bubble bullet that bounces between all enemies, dealing <span style="color:#6BEB00FF" ;="">350 (Max 700)%</span> damage and becomes <span style="color:#FFFF00FF" ;="">invulnerable</span> for <span style="color:#6BEB00FF" ;="">3.5 (Max 14)</span> seconds.</i>
                 </span>
               </div>
 
-              <div class="col-12 mb-3">
-                <h5 title="PassiveSkill" id="PassiveSkill" class="font-weight-bold mr-3 mb-3">
-                  <!-- Passive Skill: -->
-                </h5>
-
-                <span style="font-size: 16px" title="PassiveSkillText">
-                  <i id="PassiveSkillText" class="mb-3">
-                    <!-- Increases critical damage of normal attacks by 28% (Max 56%). -->
-                  </i>
-                </span>
-              </div>
+             
             </div>
           </div>
 
@@ -149,11 +137,11 @@
           <div class="col-lg-6 mb-3" style="border-left: 1px solid #6e6e6e">
             <div class="row">
               <div class="col-4 mb-5 d-flex align-items-center">
-                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/042_0.png'">
+                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_042_0.png'">
                   Unawakened
                 </button>
 
-                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/042_1.png'">
+                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_042_1.png'">
                   Awakened
                 </button>
               </div>
@@ -162,11 +150,11 @@
 
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
-                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/042_0.png" style="width: 500px">
+                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/Supporter_042_0.png" style="width: 500px">
               </div>
               <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_042_0.png" style="width: 500px">
+                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_Supporter_042_0.png" style="width: 500px">
                 </div>
             </div>
           </div>

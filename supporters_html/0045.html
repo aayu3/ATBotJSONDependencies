@@ -2,14 +2,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta id="metaTitle" name="title" content="[Master] Akiyama Rinko">
-    <meta id="metaDescription" name="description" content="Wiki page for [Master] Akiyama Rinko.">
-    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/045.png">
-    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/045.png">
-    <meta id="ogTitle" property="og:title" content="[Master] Akiyama Rinko">
-    <meta id="ogDescription" property="og:description" content="Wiki page for [Master] Akiyama Rinko.">
+    <meta id="metaTitle" name="title" content="Catejina">
+    <meta id="metaDescription" name="description" content="Wiki page for Catejina.">
+    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_045.png">
+    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_045.png">
+    <meta id="ogTitle" property="og:title" content="Catejina">
+    <meta id="ogDescription" property="og:description" content="Wiki page for Catejina.">
     <meta property="og:type" content="website">
-    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/045.png">
+    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/Supporter_045.png">
     <title>ATBotJSON Dependencies</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 
@@ -25,6 +25,8 @@
 
       <li><a href="../index.html">Home</a></li>
       <li><a class="active" href="../supporters.html">Supporters</a></li>
+      <li><a href="../weapons.html">Weapons</a></li>
+      <li><a href="../characters.html">Character Guides</a></li>
       <li><a href="../beginner_guide.html">Beginner's Guide</a></li>
       <li><a href="../reroll_guide.html">Reroll Guide</a></li>
       <li><a href="../supporters.json" download="SupporterJSON">Supporter JSON</a></li>
@@ -57,7 +59,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mb-5">
-            <h2 id="Name" class="font-weight-bold">No. 45: [Master] Akiyama Rinko</h2>
+            <h2 id="Name" class="font-weight-bold">No. 45: Catejina</h2>
           </div>
         </div>
 
@@ -68,7 +70,7 @@
             <div class="row">
               <div class="col-12 mb-3 d-flex align-items-center">
                 <h3 class="font-weight-bold mr-3">Type:</h3>
-                <img id="Type" src="../wiki_icons/protect.png" class="mr-4" style="height: 34px" title="Type">
+                <img id="Type" src="../wiki_icons/assist.png" class="mr-4" style="height: 34px" title="Type">
 
                 <h3 class="font-weight-bold mr-3">Rarity:</h3>
                 <img id="Rarity" src="../wiki_icons/ur.png" style="height: 34px" title="Rarity">
@@ -80,15 +82,9 @@
                 <h4 title="Source" ,="" id="Source" class="font-weight-bold">
                   Source:
                   <!-- Standard Gacha -->
-                Limited Gacha</h4>
+                </h4>
               </div>
 
-              <div class="col-12 mb-3">
-                <h4 title="Status" ,="" id="Status" class="font-weight-bold">
-                  Status:
-                  <!-- Released -->
-                Released</h4>
-              </div>
             </div>
 
             <div class="row">
@@ -99,12 +95,15 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <h4 title="SubSkill" id="SubSkill" class="font-weight-bold">Sub Skill: <u id="SubSkillName">Gale Wall</u></h4>
+                <h4 title="SubSkill" id="SubSkill" class="font-weight-bold">Sub Skill: <u id="SubSkillName">Cursed Beauty</u></h4>
               </div>
 
               <div class="col-12 mb-3">
                 <span style="font-size: 16px" title="SubSkillText">
-                  <i id="SubSkillText">Reduces damage taken from ranged attacks by 15% (Max 30%); you have a 10% chance to reduce any damage taken by 45% (Max 90%) when attacked.</i>
+                  <i id="SubSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    Reduces the <span style="color:#FFFF00FF" ;="">duration</span> of all debuffs on you by <span style="color:#6BEB00FF" ;="">10 (Max 20)%</span>.</i>
                 </span>
               </div>
             </div>
@@ -117,24 +116,19 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Lead Skill: <u id="LeadSkillName">Itto Secret Style: Housenka</u> CD: 56s</h4>
+                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Curse Whip</h4>
               </div>
 
               <div class="col-12 mb-3">
-                <h5 title="ActiveSkill" id="ActiveSkill" class="font-weight-bold mr-3 mb-3">Active Skill: </h5>
-
-                <span style="font-size: 16px" title="ActiveSkillText">
-                  <i id="ActiveSkillText" class="mb-3">Creates a gravity zone that pulls all enemies in towards her and deals 200% (Max 400%) damage to make them groggy.</i>
+                <span style="font-size: 16px" title="MainSkillText">
+                  <i id="MainSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    Deals <span style="color:#6BEB00FF" ;="">187.5 (Max 750)%</span> damage to 1 enemy, and increases <span style="color:#FFFF00FF" ;="">duration</span> of all debuffs against it for 15 seconds by <span style="color:#6BEB00FF" ;="">25 (Max 50)%</span></i>
                 </span>
               </div>
 
-              <div class="col-12 mb-3">
-                <h5 title="PassiveSkill" id="PassiveSkill" class="font-weight-bold mr-3 mb-3">Passive Skill: </h5>
-
-                <span style="font-size: 16px" title="PassiveSkillText">
-                  <i id="PassiveSkillText" class="mb-3">Deals 100% (Max 200%) damage to all enemies every 5 seconds with a 30% chance.</i>
-                </span>
-              </div>
+             
             </div>
           </div>
 
@@ -143,11 +137,11 @@
           <div class="col-lg-6 mb-3" style="border-left: 1px solid #6e6e6e">
             <div class="row">
               <div class="col-4 mb-5 d-flex align-items-center">
-                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/045_0.png'">
+                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_045_0.png'">
                   Unawakened
                 </button>
 
-                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/045_1.png'">
+                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_045_1.png'">
                   Awakened
                 </button>
               </div>
@@ -156,11 +150,11 @@
 
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
-                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/045_0.png" style="width: 500px">
+                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/Supporter_045_0.png" style="width: 500px">
               </div>
               <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_045_0.png" style="width: 500px">
+                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_Supporter_045_0.png" style="width: 500px">
                 </div>
             </div>
           </div>

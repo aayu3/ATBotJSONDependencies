@@ -4,12 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta id="metaTitle" name="title" content="Fuuma Amane">
     <meta id="metaDescription" name="description" content="Wiki page for Fuuma Amane.">
-    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/004.png">
-    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/004.png">
+    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_004.png">
+    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_004.png">
     <meta id="ogTitle" property="og:title" content="Fuuma Amane">
     <meta id="ogDescription" property="og:description" content="Wiki page for Fuuma Amane.">
     <meta property="og:type" content="website">
-    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/004.png">
+    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/Supporter_004.png">
     <title>ATBotJSON Dependencies</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 
@@ -25,6 +25,8 @@
 
       <li><a href="../index.html">Home</a></li>
       <li><a class="active" href="../supporters.html">Supporters</a></li>
+      <li><a href="../weapons.html">Weapons</a></li>
+      <li><a href="../characters.html">Character Guides</a></li>
       <li><a href="../beginner_guide.html">Beginner's Guide</a></li>
       <li><a href="../reroll_guide.html">Reroll Guide</a></li>
       <li><a href="../supporters.json" download="SupporterJSON">Supporter JSON</a></li>
@@ -83,12 +85,6 @@
                 Standard Gacha</h4>
               </div>
 
-              <div class="col-12 mb-3">
-                <h4 title="Status" ,="" id="Status" class="font-weight-bold">
-                  Status:
-                  <!-- Released -->
-                Released</h4>
-              </div>
             </div>
 
             <div class="row">
@@ -104,7 +100,10 @@
 
               <div class="col-12 mb-3">
                 <span style="font-size: 16px" title="SubSkillText">
-                  <i id="SubSkillText">Increase damage dealt to Machine-type enemies by 25% (Max 50%).</i>
+                  <i id="SubSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    Increases <span style="color:#FFFF00FF" ;="">damage</span> dealt to Machine-type enemies by <span style="color:#6BEB00FF" ;="">25 (Max 50)%</span>.</i>
                 </span>
               </div>
             </div>
@@ -117,30 +116,19 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Lead Skill: <u id="LeadSkillName">Evil Eye: Circle Motion</u></h4>
+                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Evil Eye: Circle Motion</h4>
               </div>
 
               <div class="col-12 mb-3">
-                <h5 title="ActiveSkill" id="ActiveSkill" class="font-weight-bold mr-3 mb-3">
-                  <!-- Active Skill: -->
-                </h5>
-
-                <span style="font-size: 16px" title="ActiveSkillText">
-                  <i id="ActiveSkillText" class="mb-3">
-                    <!-- Becomes invulnerable for 7 (Max 14) seconds. -->
-                  </i>
+                <span style="font-size: 16px" title="MainSkillText">
+                  <i id="MainSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    <span style="color:#FFA500FF" ;="">Passive</span>: Upon being attacked, performs an <span style="color:#FFFF00FF" ;="">area attack</span> that deals <span style="color:#6BEB00FF" ;="">55 (Max 110)%</span> of the incoming damage. Every 3rd area attack deals additional damage and <span style="color:#FFFF00FF" ;="">knocks back</span> enemies.</i>
                 </span>
               </div>
 
-              <div class="col-12 mb-3">
-                <h5 title="PassiveSkill" id="PassiveSkill" class="font-weight-bold mr-3 mb-3">
-                  <!-- Passive Skill: -->
-                </h5>
-
-                <span style="font-size: 16px" title="PassiveSkillText">
-                  <i id="PassiveSkillText" class="mb-3">Upon being attacked, performs an area attack that deals 55% (Max 110%) of the incoming damage. Every 3rd area attack deals additional damage and knocks back enemies.</i>
-                </span>
-              </div>
+             
             </div>
           </div>
 
@@ -149,11 +137,11 @@
           <div class="col-lg-6 mb-3" style="border-left: 1px solid #6e6e6e">
             <div class="row">
               <div class="col-4 mb-5 d-flex align-items-center">
-                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/004_0.png'">
+                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_004_0.png'">
                   Unawakened
                 </button>
 
-                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/004_1.png'">
+                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_004_1.png'">
                   Awakened
                 </button>
               </div>
@@ -162,11 +150,11 @@
 
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
-                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/004_0.png" style="width: 500px">
+                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/Supporter_004_0.png" style="width: 500px">
               </div>
               <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_004_0.png" style="width: 500px">
+                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_Supporter_004_0.png" style="width: 500px">
                 </div>
             </div>
           </div>

@@ -2,14 +2,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta id="metaTitle" name="title" content="[Draconic] Su Jinglei">
-    <meta id="metaDescription" name="description" content="Wiki page for [Draconic] Su Jinglei.">
-    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/053.png">
-    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/053.png">
-    <meta id="ogTitle" property="og:title" content="[Draconic] Su Jinglei">
-    <meta id="ogDescription" property="og:description" content="Wiki page for [Draconic] Su Jinglei.">
+    <meta id="metaTitle" name="title" content="[Apostle] Mizuki Shiranui">
+    <meta id="metaDescription" name="description" content="Wiki page for [Apostle] Mizuki Shiranui.">
+    <meta id="metaImage" name="image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_053.png">
+    <meta id="ogImage" property="og:image" content="https://aayu3.github.io/ATBotJSONDependencies/supporter_images/Supporter_053.png">
+    <meta id="ogTitle" property="og:title" content="[Apostle] Mizuki Shiranui">
+    <meta id="ogDescription" property="og:description" content="Wiki page for [Apostle] Mizuki Shiranui.">
     <meta property="og:type" content="website">
-    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/053.png">
+    <link id="faviconInfo" rel="shortcut icon" type="image/png" href="../supporter_images/Supporter_053.png">
     <title>ATBotJSON Dependencies</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
 
@@ -25,6 +25,8 @@
 
       <li><a href="../index.html">Home</a></li>
       <li><a class="active" href="../supporters.html">Supporters</a></li>
+      <li><a href="../weapons.html">Weapons</a></li>
+      <li><a href="../characters.html">Character Guides</a></li>
       <li><a href="../beginner_guide.html">Beginner's Guide</a></li>
       <li><a href="../reroll_guide.html">Reroll Guide</a></li>
       <li><a href="../supporters.json" download="SupporterJSON">Supporter JSON</a></li>
@@ -57,7 +59,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 mb-5">
-            <h2 id="Name" class="font-weight-bold">No. 53: [Draconic] Su Jinglei</h2>
+            <h2 id="Name" class="font-weight-bold">No. 53: [Apostle] Mizuki Shiranui</h2>
           </div>
         </div>
 
@@ -68,7 +70,7 @@
             <div class="row">
               <div class="col-12 mb-3 d-flex align-items-center">
                 <h3 class="font-weight-bold mr-3">Type:</h3>
-                <img id="Type" src="../wiki_icons/protect.png" class="mr-4" style="height: 34px" title="Type">
+                <img id="Type" src="../wiki_icons/assist.png" class="mr-4" style="height: 34px" title="Type">
 
                 <h3 class="font-weight-bold mr-3">Rarity:</h3>
                 <img id="Rarity" src="../wiki_icons/ur.png" style="height: 34px" title="Rarity">
@@ -83,12 +85,6 @@
                 Limited Gacha</h4>
               </div>
 
-              <div class="col-12 mb-3">
-                <h4 title="Status" ,="" id="Status" class="font-weight-bold">
-                  Status:
-                  <!-- Released -->
-                Released</h4>
-              </div>
             </div>
 
             <div class="row">
@@ -99,12 +95,15 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <h4 title="SubSkill" id="SubSkill" class="font-weight-bold">Sub Skill: <u id="SubSkillName">Dragon Lady</u></h4>
+                <h4 title="SubSkill" id="SubSkill" class="font-weight-bold">Sub Skill: <u id="SubSkillName">Phantom Exorcist</u></h4>
               </div>
 
               <div class="col-12 mb-3">
                 <span style="font-size: 16px" title="SubSkillText">
-                  <i id="SubSkillText">Increases melee attack damage by 2% (Max 4%) for 5 seconds (stacks up to 10 times, loses all stacks upon being attacked). Reduces damage taken from Demon-type enemies by 10% (Max 20%).</i>
+                  <i id="SubSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    Increases <span style="color:#FFFF00FF" ;="">damage dealt</span> to all enemies by 30%; reduces <span style="color:#FFFF00FF" ;="">damage taken</span> by <span style="color:#6BEB00FF" ;="">3 (Max 6)%</span> and <span style="color:#FFFF00FF" ;="">damage dealt</span> by [FF0000FF]5 (Max 5)% per each enemy nearby</i>
                 </span>
               </div>
             </div>
@@ -117,24 +116,20 @@
 
             <div class="row">
               <div class="col-12 mb-3">
-                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Lead Skill: <u id="LeadSkillName">Beast Art: Ryuuhajin</u> CD: 40s</h4>
+                <h4 title="LeadSkill" id="LeadSkill" class="font-weight-bold">Water Art: Phantom Summoning</h4>
               </div>
 
               <div class="col-12 mb-3">
-                <h5 title="ActiveSkill" id="ActiveSkill" class="font-weight-bold mr-3 mb-3">Active Skill: </h5>
-
-                <span style="font-size: 16px" title="ActiveSkillText">
-                  <i id="ActiveSkillText" class="mb-3">Sends a black draconic wave ahead to deal 400% (Max 800%) damage and to remove the enemy’s Super Armor (not applied in Arena)</i>
+                <span style="font-size: 16px" title="MainSkillText">
+                  <i id="MainSkillText">
+                    <!-- Increases the critical rate of normal attacks by 8% (Max 16%); 
+                    each normal attack uses 5% (Max 10%) of Particles. -->
+                    <span style="color:#FFA500FF" ;="">Passive</span>: Reduces the <span style="color:#FFFF00FF" ;="">remaining cooldown time</span> of one of the character's skills by <span style="color:#6BEB00FF" ;="">5 (Max 20)%</span> upon being attacked. Applies once every 15 seconds
+<span style="color:#FFA500FF" ;="">Active</span>: Summons an illusion that deals <span style="color:#6BEB00FF" ;="">70 (Max 140)%</span> of <span style="color:#FFFF00FF" ;="">melee attack</span> damage for 12 seconds</i>
                 </span>
               </div>
 
-              <div class="col-12 mb-3">
-                <h5 title="PassiveSkill" id="PassiveSkill" class="font-weight-bold mr-3 mb-3">Passive Skill: </h5>
-
-                <span style="font-size: 16px" title="PassiveSkillText">
-                  <i id="PassiveSkillText" class="mb-3">Basic melee attacks give a 15% chance of gaining Super Armor for 1 second (Max 2 seconds).</i>
-                </span>
-              </div>
+             
             </div>
           </div>
 
@@ -143,11 +138,11 @@
           <div class="col-lg-6 mb-3" style="border-left: 1px solid #6e6e6e">
             <div class="row">
               <div class="col-4 mb-5 d-flex align-items-center">
-                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/053_0.png'">
+                <button title="UnawakenedButton" id="UnawakenedButton" class="btn btn-primary mr-3" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_053_0.png'">
                   Unawakened
                 </button>
 
-                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/053_1.png'">
+                <button title="AwakenedButton" id="AwakenedButton" class="btn btn-danger" style="min-width: 114px" onclick="document.getElementById('SupporterImage').src='../supporter_images/Supporter_053_1.png'">
                   Awakened
                 </button>
               </div>
@@ -156,11 +151,11 @@
 
             <div class="row">
               <div class="col-12 d-flex justify-content-center">
-                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/053_0.png" style="width: 500px">
+                <img title="SupporterImage" id="SupporterImage" src="../supporter_images/Supporter_053_0.png" style="width: 500px">
               </div>
               <div class="row">
                 <div class="col-12 d-flex justify-content-center">
-                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_053_0.png" style="width: 500px">
+                  <img title="No Intimacy" id="IntimacyImage" src="../intimacy_images/Supporter_Supporter_053_0.png" style="width: 500px">
                 </div>
             </div>
           </div>
