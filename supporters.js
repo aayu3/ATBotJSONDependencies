@@ -83,6 +83,7 @@ function SupporterJSONtoHTML(supporter) {
         formatDesc = formatDesc.split('[6BEB00FF]').join('<span style="color:#6BEB00FF";>');
         formatDesc = formatDesc.split('[FFA500FF]').join('<span style="color:#FFA500FF";>');
         formatDesc = formatDesc.split('[FF5A00FF]').join('<span style="color:#FF5A00FF";>');
+        formatDesc = formatDesc.split('[FF0000FF]').join('<span style="color:#FF0000FF";>');
         templateHTML("#SubSkillText").append(formatDesc);
     }
 
@@ -94,6 +95,7 @@ function SupporterJSONtoHTML(supporter) {
         var formatDesc = supporter.MainSkillDescription;
         formatDesc = formatDesc.split('[FFFF00FF]').join('<span style="color:#FFFF00FF";>');
         formatDesc = formatDesc.split('[-]').join('</span>');
+        formatDesc = formatDesc.split('[FF0000FF]').join('<span style="color:#FF0000FF";>');
         formatDesc = formatDesc.split('[6BEB00FF]').join('<span style="color:#6BEB00FF";>');
         formatDesc = formatDesc.split('[FFA500FF]').join('<span style="color:#FFA500FF";>');
         formatDesc = formatDesc.split('[FF5A00FF]').join('<span style="color:#FF5A00FF";>');
