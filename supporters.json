@@ -1727,7 +1727,7 @@
       "MaxForgeDEF":3432,
       "MaxSLVLAttack":5196,
       "MaxSLVLDEF":5148,
-      "Source":"Standard Gacha",
+      "Source":"Event/Limited Gacha",
       "Icon":"Supporter_076",
       "SubSkillVal0":120,
       "SubSkillVal0Inc":30,
@@ -1778,18 +1778,16 @@
       "MaxForgeDEF":3108,
       "MaxSLVLAttack":3516,
       "MaxSLVLDEF":4662,
-      "Source":"Event/Limited Gacha",
       "Icon":"Supporter_079",
       "SubSkillVal0":15,
       "SubSkillVal0Inc":3.75,
       "MainSkillVal0":30,
       "MainSkillVal0Inc":15,
-      "Name" : "Aina Winchester",
+      "Name":"Aina Winchester",
       "SkillName":"The Merc with Guns Akimbo",
-      "SkillDescription":"When using a Machine type-character, reduces [FFFF00FF]damage taken[-] by [6BEB00FF]15% (Max 30%)[-]",
+      "SkillDescription":"When using a Machine type-character, reduces [FFFF00FF]damage taken[-] by [6BEB00FF]15 (Max 30)%[-]",
       "MainSkillName":"Buster Shooter",
-      "MainSkillDescription":"Summons a drone that [FFFF00FF]attacks[-] a single enemy with [6BEB00FF]30% (Max 60%)[-] damage for 4 seconds"
-
+      "MainSkillDescription":"Summons a drone that [FFFF00FF]attacks[-] a single enemy with [6BEB00FF]{0}%[-] damage for 4 seconds"
    },
    {
       "Rarity":"UR",
@@ -1804,7 +1802,7 @@
       "MaxForgeDEF":3270,
       "MaxSLVLAttack":5472,
       "MaxSLVLDEF":4905,
-      "Source":"Event/Limited Gacha",
+      "Source":"Standard Gacha",
       "Icon":"Supporter_082",
       "SubSkillVal0":8,
       "SubSkillVal0Inc":2,
@@ -1818,7 +1816,7 @@
       "SkillName":"Cat's Hunting Hands",
       "SkillDescription":"Increases [FFFF00FF]critical rate[-] of all attacks by [6BEB00FF]8 (Max 16)%[-]; Increases [FFFF00FF]critical damage[-] of all attacks by [6BEB00FF]16 (Max 32)%[-].",
       "MainSkillName":"Beast Art: Rabid Claws",
-      "MainSkillDescription":"Claw 1 enemy to inflict [6BEB00FF]680 (Max 1360)%[-] damage, and a [FFFF00FF]bleed[-] effect of [-]36 (Max 144)%[-] damage."
+      "MainSkillDescription":"Claw 1 enemy to inflict [6BEB00FF]680 (Max 1360)%[-] damage, and a [FFFF00FF]bleed[-] effect of [6BEB00FF]36 (Max 144)%[-] damage."
    },
    {
       "Rarity":"UR",
@@ -1833,7 +1831,7 @@
       "MaxForgeDEF":3176,
       "MaxSLVLAttack":5643,
       "MaxSLVLDEF":4764,
-      "Source":"Event/Limited Gacha",
+      "Source":"Standard Gacha",
       "Icon":"Supporter_083",
       "SubSkillVal0":18,
       "SubSkillVal0Inc":4.5,
@@ -1843,9 +1841,9 @@
       "MainSkillVal1Inc":7.5,
       "Name":"Hayami Uzuki",
       "SkillName":"Radiant Spearhead",
-      "SkillDescription":"[FFFF00FF]Damage dealt[-] with weapon skill increased by [6BEB00FF]18% (Max 36%)[-]",
+      "SkillDescription":"[FFFF00FF]Damage dealt[-] with weapon skill increased by [6BEB00FF]18 (Max 36)%[-]",
       "MainSkillName":"Light Art: Rending Radiance",
-      "MainSkillDescription":"Deals [6BEB00FF]420% (Max 840%)[-] damage to all enemies, and increases [FFFF00FF]damage dealt[-] to target by [6BEB00FF]15% (Max 30%)[-] for 10 seconds"
+      "MainSkillDescription":"Deals [6BEB00FF]420 (Max 840)%[-] damage to all enemies, and increases [FFFF00FF]damage dealt[-] to target by [6BEB00FF]7.5 (Max 30)%[-] for 10 seconds"
    },
    {
       "Rarity":"UR",
