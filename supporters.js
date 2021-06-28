@@ -69,7 +69,7 @@ function SupporterJSONtoHTML(supporter) {
     if (supporter.Rarity ==="R") {
         
     } else {
-        templateHTML("#IntimacyImage").attr("src","../intimacy_images/Supporter_" + supporter.Icon + "_0.png");
+        templateHTML("#IntimacyImage").attr("src","../intimacy_images/" + supporter.Icon + "_0.png");
     }
     
     // Subskill Formatting
